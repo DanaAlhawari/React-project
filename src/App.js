@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, NavLink } from "react-router-dom";
+import Startsida from './Startsida';
+import Kategorisida from './Kategorisida';
+import Receptsida from './Receptsida';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logoType" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () =>(
+   <div>
+      <h1>Peppers Pasteries</h1>
+      <h2>Meny</h2>
+      <ul>
+          <li><NavLink to="/">Startsida</NavLink></li>
+          <li><NavLink to="/Kategorisida">Kategorisida</NavLink></li>
+          <li><NavLink to="/Receptsida">Receptsida</NavLink></li>
+      </ul>
+      <Routes>
+        <Route path="/" element={<Startsida />} />
+        <Route path="Kategorisida" element={<Kategorisida />} />
+          <Route path="Receptsida" element={<Receptsida />} />
+      </Routes>
+  </div>
+
   );
-}
 
 export default App;
