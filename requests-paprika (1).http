@@ -11,7 +11,7 @@ Content-Type: application/json
     "ratings": [2, 3, 4, 1, 2, 3],
     "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_238653/cf_259/midsommartarta.jpg",
     "timeInMins": 60,
-    "categories": [ "Tårta", "Midsommar", "Smaskigt" ],
+    "categories": [ "Tårta" ],
     "ingredientsAntal": 17,
     "ingredients": [ "100 g rumstempererat smör", "2 1/3 dl strösocker", "1 msk sirap", "2 ägg", "1 1/2 dl vetemjöl", "1/2 tsk salt", "1 1/2 tsk vaniljsocker", "1 dl kakao", "2 dubbeldaim (à 56 g)", "smör (till formen)", "ströbröd (till formen)", "5 gelatinblad", "1/2 l färska jordgubbar","3 äggulor","2 dl florsocker", "6 dl vispgrädde", "1 l färska jordgubbar"],
     "instructions": [ "Sätt ugnen på 175°C.", "Botten: Vispa smör, socker och sirap pösigt. Rör ner äggen.", "Blanda vetemjöl, salt, vaniljsocker och kakao. Hacka daimen grovt. Tillsätt mjölblandningen och daimen i smeten. Bre ut smeten i en smord, bröad springform, ca 24 cm i diameter (för 12 bitar).", "Grädda i ca 20 minuter. Låt botten kallna. Ta bort ringen på formen och torka bort ströbrödet. Sätt tillbaka ringen på botten.", "Fyllning: Blötlägg gelatinbladen 5 minuter i kallt vatten.", "Mixa jordgubbarna i matberedare eller med stavmixer till en slät puré.", "Vispa äggulor och florsocker luftigt. Vispa grädden till lös konsistens.", "Värm 1/10 av jordgubbspurén i en kastrull. Ta upp gelatinbladen och tillsätt i kastrullen. Låt det smälta på svag värme. Rör ner gelatinblandningen i resten av purén.", "Blanda försiktigt ner äggsmeten i purén och sedan grädden till en slät smet. Häll smeten över bottnen. Ställ minst 4 timmar i kylskåp eller i frysen. Tina 4 timmar i rumstemperatur vid serveringen.", "Toppa tårtan med rensade jordgubbar."]
@@ -27,14 +27,80 @@ Content-Type: application/json
     "ratings": [2, 3, 4, 1, 2, 3],
     "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_81161/cf_259/skordetarta_med_rodbetor__hallon_och_valnotter.jpg",
     "timeInMins": 60,
-    "categories": [ "Tårta", "Smaskigt" ],
+    "categories": [ "Tårta" ],
     "ingredientsAntal": 21,
     "ingredients": [ "smör till formen", "1 dl kokos", "300 g färska rödbetor", "1 1/2 dl socker", "1 1/2 dl farinsocker", "1 dl rapsolja", "3 ägg", "3 dl vetemjöl", "1 tsk malen ingefära", "1 tsk malen kanel", "1/2 tsk malen muskot", "1 tsk bakpulver", "1 tsk bikarbonat", "1 krm salt", "350 g tinade, frysta hallon", "300 g färskost", "3/4 dl florsocker", "1 msk vaniljsocker", "2 dl vispgrädde", "1 dl grovhackade valnötter", "1 1/2 dl färska hallon"],
     "instructions": [ "Rödbetskaka: Sätt ugnen på 175°C.", "Smörj en rund form med smör, ca 24 cm i diameter (för 10 portioner), och 'bröa' den med kokos.", "Skala och finriv rödbetorna.", "Vispa socker, farinsocker, rapsolja och ägg pösigt. Tillsätt de rivna rödbetorna.", "Blanda alla torra ingredienser i en bunke. Rör ner dem i rödbetssmeten.", "Häll smeten i formen. Grädda i nedre delen av ugnen ca 50 minuter. Kontrollera med provsticka, kakan ska inte vara kladdig. Låt svalna.", "Fyllning: Mosa hallonen med en gaffel. Vispa ihop med färskost, florsocker och vaniljsocker i en bunke.", "Skär kakan i två bottnar. Lägg den undre på ett fat och bred över hälften av hallonmoset. Lägg över den andra bottnen och bred på resten av fyllningen.", "Topping: Vispa grädden. Bred den runt tårtan. Garnera med valnötter och hallon."]
 }
 
 ###
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
 
+{
+    "title": "Amerikanska blåbärsmuffins",
+    "description": "Supergoda blåbärsmuffins med härligt krispiga spån av mandel. Häll bara ner din smet i muffinsformar före du tillsätter de söta blåbären och gräddar i ugn. Servera de härliga, amerikanska blåbärsmuffinsen avsvalnade.",
+    "ratings": [2, 3, 4, 1, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_63253/cf_259/amerikanska_blabarsmuffins.jpg",
+    "timeInMins": 45,
+    "categories": [ "Bakelser" ],
+    "ingredientsAntal": 9,
+    "ingredients": [ "150 g smör eller margarin (rumstempererat)", "2 dl socker", "2 ägg", "1 tsk vaniljsocker", "1/2 dl mjölk", "3 dl vetemjöl", "1 tsk bakpulver", "100 g blåbär (100 g motsvarar ca 2 dl)", "25 g mandelspån"],
+    "instructions": [ "Sätt ugnen på 200°C.", "Rör matfett och socker vitt och pösigt, gärna med elvisp. Rör i äggen, ett i taget. Tillsätt vaniljsocker och mjölken. Blanda mjöl och bakpulver och rör i smeten.", "Fyll smeten i en smord muffinspanna för 6 stora muffins eller i pappersformar. Tryck i blåbären med en sked. Strö över mandelspånen. Grädda i ca 15-20 min.", "Låt muffinsarna svalna i pannan innan de lossas."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Ahlgrens bilar-cheesecake",
+    "description": "Cheesecake är alltid en uppskattad favorit på dessertbordet. Den här lekfulla godingen med kexchokladbotten har en smak av Ahlgrens bilar och kommer utan tvekan uppskattas av både stora och små.",
+    "ratings": [2, 3, 4, 1, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_197836/cf_259/ahlgrens_bilar-_cheesecake.jpg",
+    "timeInMins": 60,
+    "categories": [ "Bakelser" ],
+    "ingredientsAntal": 13,
+    "ingredients": [ "3 dl grädde (40%)", "80 g Ahlgrens bilar Orginal (80 g bilar motsvarar ca 70 st)", "6 st kexchoklad (à 60 g)", "50 g smör", "3 äggvitor", "2 krm socker (till att vispa äggvitorna med)", "1 msk citronjuice", "3 dl Ahlgrens bilar-fluff", "3 äggulor", "1 1/2 dl socker (till att vispa äggulorna med)", "200 g färskost orginal (alt mager färskost)", "några droppar röd karamellfärg", "några droppar grön karamellfärg"],
+    "instructions": [ "Fluff: Värm grädde och Ahlgrens bilar i en kastrull på svag värme tills bilarna smälter, får inte koka. När bilarna har smält, ställ gräddblandningen i kylen och låt det svalna ca en timme.", "Botten: Smula kexchokladen med händerna i en bunke. Smält under tiden smöret i en kastrull.", "Häll sedan över smöret på kexchokladsmulorna och tryck ut smulet i en springform ca 28 cm med avtagbar kant (för 1 tårta på 12 bitar).", "Lägg in i frysen.", "Fyllning: Knäck äggen och separera äggvitan från gulan (spara äggulan till senare).", "Vispa äggvitorna med socker och citronjuice till ett hårt skum.", "Vispa Ahlgrens bilar-fluffet till vispad grädde konsistens.", "Vispa äggulor och socker pösigt ca 5 minuter.", "Tillsätt färskosten i ägguleblandningen och fortsätt att vispa.", "Vänd därefter i Ahlgrens bilar-fluffet i ägguleblandningen med slickepott.", "Sist vänder du i äggvitan på samma sätt (om du vill, ta bort 1/2 dl (för 1 tårta) för att färga hälften rosa och hälften grön för dekorering).", "Ta ut formen från frysen och häll upp blandningen. Dekorera eventuellt cheesecaken. Låt stå över natten i frysen.", "Ta loss den från formen och låt stå i kylen ca 1 timme innan servering."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Havreflarn",
+    "description": "Havreflarn måste ändå räknas till de snabbaste och enklaste kakorna att baka. På under en halvtimme kan du servera perfekta och spröda havreflarn. Rör ihop smör, grädde, sirap och naturligtvis havregryn med vetemjöl, bakpulver och socker. 5 minuter i ugnen och havreflarnen är fädiggräddade.",
+    "ratings": [2, 3, 4, 1, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_223995/cf_259/havreflarn.jpg",
+    "timeInMins": 30,
+    "categories": [ "Kakor" ],
+    "ingredientsAntal": 7,
+    "ingredients": [ "75 g smör", "2 msk vispgrädde", "2 msk ljus sirap", "1 dl havregryn", "1 dl vetemjöl", "1/2 tsk bakpulver", "1 dl strösocker"],
+    "instructions": [ "Sätt ugnen på 200°C.", "Smält smöret i en kastrull.", "Rör i grädden och sirapen.", "Blanda havregryn, vetemjöl, bakpulver och socker och rör ned i smörblandningen. Rör ihop till en smidig deg.", "Klicka ut smeten på en plåt med bakplåtspapper.", "Grädda mitt i ugnen ca 5 minuter.", "Låt svalna."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Mjölkchokladsnittar",
+    "description": "Dessa sega småkakor med djup chokladsmak är lika lätta att lyckas med som att tycka om. Extra goda blir chokladsnittarna med grovhackad mjölkchoklad på toppen. Gör gärna dubbel sats när du ändå är igång, för när man ätit en kaka vill man gärna ta en till…",
+    "ratings": [2, 3, 4, 1, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_159997/cf_259/mjolkchokladsnittar.jpg",
+    "timeInMins": 60,
+    "categories": [ "Kakor" ],
+    "ingredientsAntal": 9,
+    "ingredients": [ "100 g rumsvarmt smör","1 dl strösocker", "2 msk ljus sirap", "2 dl vetemjöl (2 dl motsvarar ca 120 g)", "2 msk kakao", "1/2 tsk bakpulver", "1 tsk vaniljsocker", "1 krm salt", "ca 100 g grovhackad mjölkchoklad"],
+    "instructions": [ "Sätt ugnen på 200°C.", "Rör smöret mjukt med socker och sirap.", "Blanda mjöl, kakao, bakpulver, vaniljsocker och salt. Rör ner i smörblandningen. Arbeta ihop till en ganska lös deg.", "Dela degen i 3 bitar på ett mjölat bakbord (för 40 st).", "Forma bitarna till tunna rullar. Lägg med ordentligt avstånd på en bakpappersklädd plåt. Platta till rullarna lätt och strö över chokladen.", "Grädda i mitten av ugnen 7–8 minuter. Kakorna kan fortfarande vara lite mjuka när man tar ut dem ur ugnen, de stelnar till när de svalnat.", "Låt längderna svalna några minuter. Skär dem lite på snedden till 2–3 cm breda bitar."]
+}
+
+###
 GET https://paprika-bxu3y.ondigitalocean.app/recipes?query=pap HTTP/1.1
 
 ###
@@ -47,7 +113,7 @@ GET https://paprika-bxu3y.ondigitalocean.app/categories HTTP/1.1
 
 ###
 
-GET https://paprika-bxu3y.ondigitalocean.app/categories/Italienskt/recipes HTTP/1.1
+GET https://paprika-bxu3y.ondigitalocean.app/categories/Bakelser/recipes HTTP/1.1
 
 ###
 
