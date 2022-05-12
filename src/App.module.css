@@ -1,0 +1,95 @@
+*{
+margin: 0;
+padding: 0;
+}
+.font {
+    font-family: 'Montserrat', sans-serif;
+    background-color:#FFF8F0;
+    
+}
+.tittle{
+    text-align: center;
+    text-transform: uppercase;
+}
+.tittle h1{
+    letter-spacing: 10px;
+    font-size:50px;
+    font-weight: bold;
+    margin-bottom:0;
+}
+.h1{
+    color: #8B6E4E;
+    text-decoration: none;
+}
+.tittle h2{
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-top: 0px;
+    color: #8B6E4E;
+}
+/*kategori knapper*/
+.categoriButton{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.btn1{
+   background-color: #EAEEC5;
+    border: none;
+    padding: 15px 70px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 10px;
+}
+.btn2 {
+    background-color: #EDC5C5;
+    border: none;
+    padding: 15px 70px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 10px;
+}
+.btn3 {
+    background-color: #9D7F84;
+    border: none;
+    padding: 15px 70px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 10px;
+}
+.activeLink {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+
+.inactiveLink {
+    text-decoration: none;
+}
+/**/
+.flexContainer{
+    width: 90%;
+    margin: 3% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+    
+}
+.flexContainer > div {
+    width: 30%;
+    background-color: #E3D7C8;
+    border: 1px solid #C6BEB5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+  
+}
+.cardText{
+padding: 8px 16px;
+}
+.cardText > p{
+    padding: 6px 12px;
+}

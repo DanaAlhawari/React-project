@@ -1,5 +1,10 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import styles from "./App.module.css";
+const imgStyle = {
+    width: "100%",
+    height: "450px",
+}
 
 const Recept = () => {
     const [IsRecept, setRecept] = useState();
@@ -10,23 +15,28 @@ useEffect(() => {
     
 }, [])
 
-console.log(IsRecept)
+    console.log(IsRecept);
 
-const Recepten = IsRecept?.map((recept) =>
-<div>
+    const Recepten = IsRecept?.map((recept) =>
+        
+        <div >
+            <img alt={recept.title} src={recept.imageUrl } style={imgStyle} />
+            <div className={styles.cardText}>
+                <h2><b>{recept.title}</b> {recept.avgRating}</h2>
+                <p> {recept.description}</p>
+                <b>{recept.categories} || {recept.timeInMins} Minuter</b>
+            </div>
+        </div>
+       
+    )
 
-<h1>{recept.title}</h1>
-<div>{recept.instructions}</div>
-</div>
-)
-
-return (
-    
-    <div>
-        <h2>Startsida</h2>
-        <p>Välkommen till vår sida!</p>
+    return (
+  
+        
+        <div className={styles.flexContainer}>
         {Recepten}
-    </div>
+         </div>
+   
   );
 
 }
