@@ -3,7 +3,10 @@ import Startsida from './Startsida';
 import Kategorisida from './Kategorisida';
 import Receptsida from './Receptsida';
 
+
 const App = () =>(
+ 
+   
    <div>
       <h1>Peppers Pasteries</h1>
       <h2>Meny</h2>
@@ -17,6 +20,8 @@ const App = () =>(
         <Route path="Kategorisida" element={<Kategorisida />} />
           <Route path="Receptsida" element={<Receptsida />} />
       </Routes>
+      
+      
   </div>
 
   );
