@@ -47,7 +47,7 @@ Content-Type: application/json
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 9,
     "ingredients": [ "300 g mandelmassa", "1 ägg", "2 äggvitor", "4 dl vispgrädde", "1/2 msk finrivet citronskal", "2 - 3 msk färskpressad citronjuice", "1 dl florsocker", "2 äggulor", "4 passionsfrukter"],
-    "instructions": [ "Sätt ugnen på 175°C.","Riv mandelmassan och rör ner ägg och äggvita. Häll smeten i en smord form med löstagbar kant, 18–20 cm i diameter. Grädda i mitten av ugnen ca 20 minuter. Låt svalna.", "Vispa grädden hårt. Vispa ner citronskal och juice, florsocker och äggulor. Bred ut krämen över den kalla botten i formen. Täck med plastfolie och ställ i frysen minst 8 timmar.", "Ta fram tårtan ca 20 minuter före servering. Dela passionsfrukten och gröp ut fruktköttet med en sked. Skeda passionsfrukten över tårtan."]
+    "instructions": [ "Sätt ugnen på 175°C.","Riv mandelmassan och rör ner ägg och äggvita. Häll smeten i en smord form med löstagbar kant, 18-20 cm i diameter. Grädda i mitten av ugnen ca 20 minuter. Låt svalna.", "Vispa grädden hårt. Vispa ner citronskal och juice, florsocker och äggulor. Bred ut krämen över den kalla botten i formen. Täck med plastfolie och ställ i frysen minst 8 timmar.", "Ta fram tårtan ca 20 minuter före servering. Dela passionsfrukten och gröp ut fruktköttet med en sked. Skeda passionsfrukten över tårtan."]
 }
 
 ###
@@ -197,7 +197,7 @@ Content-Type: application/json
     "instructions": [ "Fluff: Värm grädde och Ahlgrens bilar i en kastrull på svag värme tills bilarna smälter, får inte koka. När bilarna har smält, ställ gräddblandningen i kylen och låt det svalna ca en timme.", "Botten: Smula kexchokladen med händerna i en bunke. Smält under tiden smöret i en kastrull.", "Häll sedan över smöret på kexchokladsmulorna och tryck ut smulet i en springform ca 28 cm med avtagbar kant (för 1 tårta på 12 bitar).", "Lägg in i frysen.", "Fyllning: Knäck äggen och separera äggvitan från gulan (spara äggulan till senare).", "Vispa äggvitorna med socker och citronjuice till ett hårt skum.", "Vispa Ahlgrens bilar-fluffet till vispad grädde konsistens.", "Vispa äggulor och socker pösigt ca 5 minuter.", "Tillsätt färskosten i ägguleblandningen och fortsätt att vispa.", "Vänd därefter i Ahlgrens bilar-fluffet i ägguleblandningen med slickepott.", "Sist vänder du i äggvitan på samma sätt (om du vill, ta bort 1/2 dl (för 1 tårta) för att färga hälften rosa och hälften grön för dekorering).", "Ta ut formen från frysen och häll upp blandningen. Dekorera eventuellt cheesecaken. Låt stå över natten i frysen.", "Ta loss den från formen och låt stå i kylen ca 1 timme innan servering."]
 }
 
-###
+### alla kakor
 
 POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
 Content-Type: application/json
@@ -232,19 +232,91 @@ Content-Type: application/json
 }
 
 ###
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Saffransdrömmar med citron",
+    "description": "Drömmar blev om möjligt än mer drömmiga! I det här receptet har vi lyft de klassiska småkakorna till nya och juliga höjder med smaksättningen saffran och citron.",
+    "ratings": [2, 3, 4, 1, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_234482/cf_259/saffransdrommar_med_citron.jpg",
+    "timeInMins": 45,
+    "categories": [ "Kakor" ],
+    "ingredientsAntal": 8,
+    "ingredients": [ "1/2 g saffran", "1 1/2 dl strösocker", "50 g smör", "1 tsk vaniljsocker", "1/2 dl mat- eller rapsolja", "1/2 tsk hjorthornssalt", "2 dl vetemjöl", "1 msk finrivet citronskal"],
+    "instructions": [ "Sätt ugnen på 150°C.", "Stöt saffranet med lite av sockret i en mortel.", "Rör smör, det stötta saffranet, resten av sockret och vaniljsocker smidigt. Tillsätt oljan lite i taget under vispning. Blanda hjorthornssaltet med lite av mjölet och rör ner i degen. Arbeta in resten av mjölet och citronskalet.", "Forma till små kulor av degen. Lägg dem på plåtar med bakplåtspapper.", "Grädda mitt i ugnen ca 15 - 20 minuter. Låt kakorna kallna på plåten."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Klassiska schackrutor",
+    "description": "Schackrutan är en ohotad mördegsfavorit. Den klassiska småkakan går aldrig ur tiden och uppskattas alltid, både för smaken och det raffinerade mönstrets skull. Dessutom så enkel att baka att det inte finns några ursäkter att låta bli.",
+    "ratings": [2, 3, 1, 1, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_190036/cf_259/klassiska_schackrutor.jpg",
+    "timeInMins": 60,
+    "categories": [ "Kakor" ],
+    "ingredientsAntal": 5,
+    "ingredients": [ "200 g osaltat smör", "1 dl strösocker", "4 1/2 dl vetemjöl", "Ljus deg: 2 tsk vaniljsocker", "Mörk deg: 2 msk kakao"],
+    "instructions": [ "Ta fram smöret så det hinner bli rumsvarmt.", "Vispa ihop smör och socker till en jämn smet.", "Tillsätt vetemjöl, lite i taget, och fortsätt vispa tills det blir stora smulor.", "Dela degen i två. Tillsätt vaniljsocker till den ena och kakao till den andra delen. Tryck ihop varje del för sig, till två bollar.", "Ta upp degarna på ett bakbord och dela dem i två delar så du får två ljusa och två mörka delar.", "Rulla ut till längder och tryck till dem mot bakbordet så längderna får platta kanter. Lägg dem tätt ihop, med två ovanpå de andra så de bildar ett litet schackmönster.", "Låt vila i kylen i 1-2 timmar.", "Sätt ugnen på 200°C.", "Ta fram längden och skär ca 3-4 mm tjocka skivor.", "Lägg kakorna på en plåt med bakplåtspapper och grädda mitt i ugnen i ca 8-10 minuter."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Sega kolasnittar med ingefära",
+    "description": "Dessa kolasnittar med ingefära är sådär knapriga och härligt sega som vi vill ha dem. Att de är enkla att baka och rörs ihop på ett nafs gör ju inte saken sämre. Sega kolakakor är kanske snabbaste vägen till njutning.",
+    "ratings": [2, 1, 4, 1, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_189972/cf_259/sega_kolasnittar_med_ingefara.jpg",
+    "timeInMins": 60,
+    "categories": [ "Kakor" ],
+    "ingredientsAntal": 7,
+    "ingredients": [ "100 g normalsaltat smör", "1 dl strösocker", "1 msk vaniljsocker", "1 msk ljus sirap", "2 dl vetemjöl", "1 tsk bakpulver", "1 tsk malen ingefära"],
+    "instructions": [ "Sätt på ugnen på 175°C.", "Hyvla smöret tunt och rör ihop med socker.", "Tillsätt övriga ingredienser och rör ihop till en smidig deg.", "Dela degen i hälften och rulla ut till två längder (för 20 st) som läggs på en plåt med bakplåtspapper. Platta till rullarna något.", "Grädda i ugnen i 7-8 minuter.", "Ta ut plåten och skär kakorna i lagom stora, sneda bitar medan de fortfarande är varma."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Hallongrottor",
+    "description": "Lättlagade och underbara är dessa småkakor. Hallongrottor består av mördeg som smälter i munnen och ljuv hallonsylt. En klassisk kaka som fortfarande är lika populär.",
+    "ratings": [2, 3, 4, 1, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_21927/cf_259/hallongrottor.jpg",
+    "timeInMins": 30,
+    "categories": [ "Kakor" ],
+    "ingredientsAntal": 6,
+    "ingredients": [ "4 1/2 dl vetemjöl", "1 dl socker", "1 tsk bakpulver", "2 tsk vaniljsocker", "200 g smör", "Fyllning: 1 dl fast hallonsylt"],
+    "instructions": [ "Sätt ugnen på 200°C.", "Blanda samman mjöl, socker, bakpulver och vaniljsocker i en skål. Skär matfettet i mindre bitar och tillsätt det. Arbeta snabbt samman till en deg, gärna i matberedare. Om du låter degen vila en liten stund i kylen blir den lättare att hantera.", "Forma degen till valnötsstora bollar. Lägg i muffinsformar på plåtar.", "Fyllning: Gör en fördjupning i varje kaka och klicka i lite sylt.", "Grädda mitt i ugnen 10-15 minuter. Låt svalna på galler."]
+}
+
+###
 GET https://paprika-bxu3y.ondigitalocean.app/recipes?query=pap HTTP/1.1
 
 ###
 
 GET https://paprika-bxu3y.ondigitalocean.app/recipes/626c5d10ada26641c5d81e3a HTTP/1.1
 
-###
+### visar alla kategorier
 
 GET https://paprika-bxu3y.ondigitalocean.app/categories HTTP/1.1
 
-###
-
+### visar alla bakelser
 GET https://paprika-bxu3y.ondigitalocean.app/categories/Bakelser/recipes HTTP/1.1
+
+### visar alla kakor
+GET https://paprika-bxu3y.ondigitalocean.app/categories/Kakor/recipes HTTP/1.1
+
+### ska visa alla tårtor nåt är fel
+GET https://paprika-bxu3y.ondigitalocean.app/categories/Tårtor/recipes HTTP/1.1
 
 ###
 
