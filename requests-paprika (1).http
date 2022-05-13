@@ -1,6 +1,6 @@
 GET https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
 
-###
+### alla tårtor
 
 POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
 Content-Type: application/json
@@ -31,6 +31,74 @@ Content-Type: application/json
     "ingredientsAntal": 21,
     "ingredients": [ "smör till formen", "1 dl kokos", "300 g färska rödbetor", "1 1/2 dl socker", "1 1/2 dl farinsocker", "1 dl rapsolja", "3 ägg", "3 dl vetemjöl", "1 tsk malen ingefära", "1 tsk malen kanel", "1/2 tsk malen muskot", "1 tsk bakpulver", "1 tsk bikarbonat", "1 krm salt", "350 g tinade, frysta hallon", "300 g färskost", "3/4 dl florsocker", "1 msk vaniljsocker", "2 dl vispgrädde", "1 dl grovhackade valnötter", "1 1/2 dl färska hallon"],
     "instructions": [ "Rödbetskaka: Sätt ugnen på 175°C.", "Smörj en rund form med smör, ca 24 cm i diameter (för 10 portioner), och 'bröa' den med kokos.", "Skala och finriv rödbetorna.", "Vispa socker, farinsocker, rapsolja och ägg pösigt. Tillsätt de rivna rödbetorna.", "Blanda alla torra ingredienser i en bunke. Rör ner dem i rödbetssmeten.", "Häll smeten i formen. Grädda i nedre delen av ugnen ca 50 minuter. Kontrollera med provsticka, kakan ska inte vara kladdig. Låt svalna.", "Fyllning: Mosa hallonen med en gaffel. Vispa ihop med färskost, florsocker och vaniljsocker i en bunke.", "Skär kakan i två bottnar. Lägg den undre på ett fat och bred över hälften av hallonmoset. Lägg över den andra bottnen och bred på resten av fyllningen.", "Topping: Vispa grädden. Bred den runt tårtan. Garnera med valnötter och hallon."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Fryst citronmoussetårta med passionsfrukt",
+    "description": "Recept på en oemotståndlig och syrlig citronmoussetårta med passionsfrukt. Du gör den av bland annat mandelmassa, ägg, grädde, citron och passionsfrukter. Gör tårtan i tid, frys in och servera den krämiga efterrätten kall.",
+    "ratings": [4, 3, 4, 1, 4, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_227175/cf_259/fryst_citronmoussetarta_med_passionsfrukt.jpg",
+    "timeInMins": 60,
+    "categories": [ "Tårta" ],
+    "ingredientsAntal": 9,
+    "ingredients": [ "300 g mandelmassa", "1 ägg", "2 äggvitor", "4 dl vispgrädde", "1/2 msk finrivet citronskal", "2 - 3 msk färskpressad citronjuice", "1 dl florsocker", "2 äggulor", "4 passionsfrukter"],
+    "instructions": [ "Sätt ugnen på 175°C.","Riv mandelmassan och rör ner ägg och äggvita. Häll smeten i en smord form med löstagbar kant, 18–20 cm i diameter. Grädda i mitten av ugnen ca 20 minuter. Låt svalna.", "Vispa grädden hårt. Vispa ner citronskal och juice, florsocker och äggulor. Bred ut krämen över den kalla botten i formen. Täck med plastfolie och ställ i frysen minst 8 timmar.", "Ta fram tårtan ca 20 minuter före servering. Dela passionsfrukten och gröp ut fruktköttet med en sked. Skeda passionsfrukten över tårtan."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Vegansk pavlova med mango och passionsfrukt",
+    "description": "En ljuvligt god, helt vegansk tårta där kikärtsspad används i marängen istället för äggvitor. Tårtan blir vacker dekorerad med pistagenötter, mango och gröna blad.",
+    "ratings": [2, 5, 4, 1, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_177963/cf_259/vegansk_pavlova_med_mango_och_passionsfrukt.jpg",
+    "timeInMins": 60,
+    "categories": [ "Tårta" ],
+    "ingredientsAntal": 10,
+    "ingredients": [ "1 dl kylskåpskallt kikärtsspad från 1 förp kokta kikärtor (à 380 g)", "2 dl strösocker", "1/2 - 1 tsk pressad citronsaft", "1 passionsfrukt", "3 dl växtbaserat alternativ till grädde (vispbar)", "2 msk florsocker", "1/2 dl hackade pistagenötter", "1 färsk mango", "1 passionsfrukt", "ev. färsk mynta eller citronmeliss"],
+    "instructions": [ "Sätt ugnen på 100°C. Lägg bakplåtspapper på en plåt, 30x40 cm (för 12 bitar).", "Häll av kikärtsspadet (spara spadet, 1 dl spad för 12 bitar) från ärtorna i en finmaskig sil. Vispa kikärtsvätskan tills den är vit och fluffig. Den är tillräckligt vispad när du kan vända den upp och ned.", "Tillsätt socker, ca 1/2 dl i taget, under fortsatt vispning. När smeten är fast och glansig är marängsmeten klar. Vispa ner citronsaften mot slutet.", "Klicka ut smeten och forma till en rund tårtbotten, ca 25 cm i diameter (för 12 bitar). Gör kanterna något högre.", "Grädda i ca 2 1/2 timme tills marängen släpper från pappret. Låt marängen ligga kvar i ugnen och svalna helt ett par timmar (med luckan stängd).", "Topping: Dela och gröp ur passionsfrukten. Vispa den växtbaserade grädden tillsammans passionsfrukt och florsocker.", "Garnering: Hacka pistagenötterna. Skala och skär mangon i skivor. Dela och gröp ur passionsfrukten.", "Klicka grädden på marängen och garnera med mango och passionsfrukt. Strö över pistagenötter och eventuellt mynta eller citronmeliss."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Vit prinsesstårta med rabarber och jordgubbar",
+    "description": "Vårens kalastårta nummer ett - en riktig partyprinsessa! Imponera med denna proffsiga prinsesstårta med rabarberkompott, hemkokt vaniljkräm och jordgubbar. Det lila bandet blir finast med vit marsipan, med vanlig marsipan blir den lila färgen lite dovare.",
+    "ratings": [2, 3, 4, 5, 2, 3],
+    "imageUrl": "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_92866/cf_259/vit_prinsesstarta_med_rabarber_och_jordgubbar.jpg",
+    "timeInMins": 60,
+    "categories": [ "Tårta" ],
+    "ingredientsAntal": 22,
+    "ingredients": [ "Tårtbotten: 4 ägg", "2 dl socker", "1 dl vetemjöl (à 60 g)", "1 dl potatismjöl (à 80 g)", "1 tsk bakpulver", "finrivet skal av 1/2 citron", "finrivet skal av 1/2 apelsin", "smör och mjöl till formen", "Vaniljkräm: 1 vaniljstång", "1 1/2 dl mjölk", "1 1/2 dl vispgrädde", "3 msk socker", "2 äggulor", "1 msk majsstärkelse", "Rabarberkompott: 250 g rabarber", "250 g frysta, tinade jordgubbar", "1 dl socker", "1/2 tsk äkta vaniljpulver", "Garnering: röd och blå hushållsfärg", "200 g vit marsipan", "4 dl vispgrädde", "1 färdigkavlat marsipanlock (gärna vitt)"],
+    "instructions": [ "Tårtbotten: Sätt ugnen på 175°C.", "Smörj och mjöla en form med löstagbar kant, ca 24 cm i diameter.", "Vispa ägg och socker pösigt i en bunke med elvisp ca 3 minuter.", "Blanda vetemjöl, potatismjöl och bakpulver i en annan bunke.", "Sikta ner mjölblandningen i äggblandningen. Blanda försiktigt med en slickepott till en jämn smet. Rör ner citron- och apelsinskal.", "Häll smeten i formen. Grädda i nedre delen av ugnen ca 30 minuter. Kontrollera med provsticka att kakan är helt torr. Låt svalna helt.", "Vaniljkräm: Dela vaniljstången på längden, skrapa ut fröna. Lägg dem i en tjockbottnad kastrull med övriga ingredienser.", "Sjud under vispning på svag värme, tills det har tjocknat. Låt svalna helt.", "Rabarberkompott: Ansa och skär rabarbern i ca 2 cm stora bitar. Lägg i en kastrull med jordgubbar, socker och vaniljpulver.", "Låt småkoka utan lock på medelvärme 10–15 minuter till en fast kompott. Mosa sönder jordgubbarna med en slev och rör då och då. Låt svalna helt.", "Garnering: Blanda 2 delar röd hushållsfärg med 1 del blå. Färga den vita marsipanen med detta tills den är lila. Lägg i plastfolie.", "Vispa grädden fast. Blanda grädden med 1⁄2 dl av vaniljkrämen (för 10 portioner). Halvera jordgubbarna.", "Bygg tårtan så här: Anvisningen gäller för 10 portioner. Skär tårtbottnen i 3 lika stora delar. Lägg den översta delen med ovansidan nedåt på ett fat. Bred ut vaniljkrämen.", "Lägg på mellanbottnen. Fördela kompotten. Bred ut vaniljgrädden ovanpå och forma den till en kupol (lättast med en palett eller baksidan av en stekspade), men spara ca 1 dl.", "Lägg på den sista bottnen med snittytan uppåt. Tryck försiktigt så den formas efter kupolen. Släta ut resterande vaniljgrädde runt kanterna.", "Lägg på marsipanlocket. Försök undvika att veck bildas genom att sträcka marsipanen nedåt och forma med händerna. Skär bort eventuell överflödig marsipan.", "Dela den lila marsipanen i 2 bitar. Rulla ut till ca 25 cm långa rullar. Kavla ut varje rulle på lätt florsockrat underlag till en 2 mm tjock platta, ca 40 x 4 cm. Skär så att det blir ca 2 1⁄2 cm breda 'band' med raka kanter. Snurra försiktigt banden från mitten och lägg runt tårtan. Nyp ihop skarvarna.", "Skär ett centrerat kryss genom marsipanlocket med en vass kniv. Gör ett snitt i mitten av varje flik ytterligare en gång så det bildas 8 flikar. Vik försiktigt ut flikarna. Fyll 'hålet' med jordgubbar. Sikta över lite florsocker."]
+}
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Schwarzwaldtårta",
+    "description": "En riktigt mäktig och fantastiskt god tårta med smak av blockchoklad och vispgrädde. Schwarzwaldtårtan uppskattas lika mycket av stora som av små. Perfekt att servera till kalaset eller högtidsdagen! ",
+    "ratings": [2, 3, 4, 1, 2, 3],
+    "imageUrl": "https://cdn-rdb.arla.com/Files/arla-se/500235447/0c754d0f-88ca-4596-a31e-d5b114615cfb.jpg?crop=(0,0,0,-148)&w=1269&h=715&ak=f525e733&hm=5c342ed7",
+    "timeInMins": 60,
+    "categories": [ "Tårta" ],
+    "ingredientsAntal": 9,
+    "ingredients": [ "2 dl havregryn", "50 g smör", "1 1/2 dl socker", "1 msk majsstärkelse", "1 tsk bakpulver", "1 ägg", "Fyllning: 5 dl mellan- eller vispgrädde", "1 msk vaniljsocker", "Garnering: 150 g mörk blockchoklad"],
+    "instructions": [ "Sätt ugnen på 200°C.", "Rosta havregrynen i en torr het stekpanna tills de får en aning färg. Se upp, för de kan lätt brännas! Låt grynen kallna", "Smält matfettet och häll det över havregrynen. Tillsätt socker, maizena och bakpulver. Vispa upp ägget och tillsätt det.", "Rita 3 cirklar med ca 21 cm diameter på bakplåtspapper (för 10 bitar). Fördela smeten i ett tunt jämnt lager på varje cirkel. Grädda 6-8 minuter mitt i ugnen.", "Låt bottnarna svalna plant. Dra försiktigt loss papperet.", "Smält blockchokladen och bre ut den till ett tunt lager på bakplåtspapper. Dra med en gaffel om du vill ha ett vågmönster. Låt chokladen stelna svalt, men skär rutmönster innan den är riktigt hård.", "Fyllning: Vispa grädden till fast skum och smaksätt med vaniljsocker.", "Spritsa eller bre ut fyllningen mellan bottnarna och ovanpå tårtan.", "Garnera med chokladbitar. Servera tårtan inom de närmaste timmarna, eftersom bottnarna blir mjuka om de får vänta länge."]
 }
 
 ###
