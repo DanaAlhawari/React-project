@@ -1,11 +1,11 @@
 // 4.1 Kommentarsfunktion
 // Fungerar inte riktigt som den ska än
-
+import styles from "./App.module.css";
 const KommentarForm = () => (
     <form>
         <input type="text" placeholder="Namn" />
-        <input type="text" placeholder="Skriv en kommentar här..."/>
-        <button type="submit">Skicka</button>
+        <textarea type="text" placeholder="Skriv en kommentar här..."/>
+        <button className={styles.submit}type="submit">Skicka</button>
     </form>
 )
 
