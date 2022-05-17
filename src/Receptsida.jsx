@@ -1,7 +1,7 @@
-import Form from './Form';
-import { useState } from "react";
-import { useEffect } from "react";
-import styles from "./App.module.css";
+import Form from './Form'
+import { useState } from "react"
+import { useEffect } from "react"
+import styles from "./App.module.css"
 const imgStyle = {
     width: "100%",
     height: "auto",
