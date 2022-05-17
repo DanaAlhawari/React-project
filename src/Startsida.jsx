@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./App.module.css";
 const imgStyle = {
     width: "100%",
@@ -20,12 +21,14 @@ useEffect(() => {
     const Recepten = IsRecept?.map((recept) =>
         
         <div >
+            <NavLink to="/:receptId">
             <img alt={recept.title} src={recept.imageUrl } style={imgStyle} />
             <div className={styles.cardText}>
                 <h2><b>{recept.title}</b> {recept.avgRating}</h2>
                 <p> {recept.description}</p>
                 <b>{recept.categories} || {recept.timeInMins} Minuter</b>
             </div>
+            </NavLink>
         </div>
        
     )

@@ -15,9 +15,9 @@ const Header = () => (
         </div>
         <div>sök fält Ingrida</div>
         <div  className={styles.categoriButton}>
-            <button className={styles.btn1}><NavLink to="Kategorisida/Bakelser" className={({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>BAKELSER </NavLink></button>
-          <button className={styles.btn2}><NavLink to="Kategorisida/Kakor" className={({isActive}) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>KAKOR</NavLink></button>
-          <button className={styles.btn3}><NavLink to="Kategorisida/Tartor" className={({isActive}) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn3Style}>TÅRTOR</NavLink></button>
+            <button className={styles.btn1}><NavLink to="Kategorisida/Bakelser/recipes" className={({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>BAKELSER </NavLink></button>
+          <button className={styles.btn2}><NavLink to="Kategorisida/Kakor/recipes" className={({isActive}) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>KAKOR</NavLink></button>
+          <button className={styles.btn3}><NavLink to="Kategorisida/Tårtor/recipes" className={({isActive}) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn3Style}>TÅRTOR</NavLink></button>
         </div>
         
     </>
