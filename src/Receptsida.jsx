@@ -23,6 +23,8 @@ useEffect(() => {
 console.log(IsRecept)
 
 
+
+
  /* 
        
         */
@@ -30,6 +32,11 @@ console.log(IsRecept)
     return (
   
         <>
+
+{IsRecept ? <>
+                    
+                    
+               
             <div className={styles.receptFlexContainer}>
             <div key={IsRecept.id}>
             <img alt={IsRecept.title} src={IsRecept.imageUrl } style={imgStyle} />
@@ -48,7 +55,7 @@ console.log(IsRecept)
                 <h3>Kommentarer</h3>
                 <Form isSent={true}/>
             </div>
-            
+            </> : <>Loading...</>}
             </>
         
         
