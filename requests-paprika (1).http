@@ -315,7 +315,7 @@ GET https://paprika-bxu3y.ondigitalocean.app/categories/Bakelser/recipes HTTP/1.
 ### visar alla kakor
 GET https://paprika-bxu3y.ondigitalocean.app/categories/Kakor/recipes HTTP/1.1
 
-### ska visa alla tårtor nåt är fel
+### ska visa alla tårtor
 GET https://paprika-bxu3y.ondigitalocean.app/categories/Tårtor/recipes HTTP/1.1
 
 ###

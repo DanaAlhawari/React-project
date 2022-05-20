@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import styles from "./App.module.css";
+
 const imgStyle = {
     width: "100%",
     height: "auto",
@@ -11,7 +12,8 @@ const imgStyle = {
 
 const Receptsida = () => {
     const {recipesId} = useParams();
-    const [IsRecept, setRecept] = useState();
+    const [Recept, setRecept] = useState();
+    
 useEffect(() => {   
      fetch(`https://paprika-bxu3y.ondigitalocean.app/recipes/${recipesId}`)
          .then(res => res.json())
@@ -20,35 +22,36 @@ useEffect(() => {
 }, [recipesId])
 
 
-console.log(IsRecept)
+//console.log(Recept)
 
-
- /* 
-       
-        */
 
     return (
   
         <>
+
+{Recept ? <>
+                    
+                    
+               
             <div className={styles.receptFlexContainer}>
-            <div key={IsRecept.id}>
-            <img alt={IsRecept.title} src={IsRecept.imageUrl } style={imgStyle} />
+            <div key={Recept.id}>
+            <img alt={Recept.title} src={Recept.imageUrl } style={imgStyle} />
             <div className={styles.receptCardText}>
-                <h2><b>{IsRecept.title}</b> {IsRecept.avgRating}</h2>
-                <p> {IsRecept.description}</p>
-                <p><ol>
-                    {IsRecept.instructions.map(instruction =>
-                    <li> {instruction}</li>)}
-               </ol> </p>
-                <b>{IsRecept.categories} || {IsRecept.timeInMins} Minuter</b>
+                <h2><b>{Recept.title}</b> {Recept.avgRating}</h2>
+                <p> {Recept.description}
+                <ol key={Recept.id}>
+                    {Recept.instructions.map(instruction =>
+                    <li key={Recept.id}> {instruction}</li>)}
+               </ol>
+                <b>{Recept.categories} || {Recept.timeInMins} Minuter</b></p>
             </div>
         </div>
             </div>
-            <div className={styles.form}>
+            </> : <>Loading...</>}
+             <div className={styles.form}>
                 <h3>Kommentarer</h3>
-                <Form isSent={true}/>
-            </div>
-            
+                    <Form  />
+                </div>
             </>
         
         

@@ -1,18 +1,42 @@
 // 4.1 Kommentarsfunktion
 // Fungerar inte riktigt som den ska än
+import {useState} from 'react'
 import styles from "./App.module.css";
-const KommentarForm = () => (
-    <form>
-        <input type="text" placeholder="Namn" />
-        <textarea type="text" placeholder="Skriv en kommentar här..."/>
-        <button className={styles.submit}type="submit">Skicka</button>
-    </form>
-)
+ 
+const Form = () => {
+     const [name, setName] = useState('');
+    const [comment, setComment] = useState('');
+    const isEnabled = name.length > 0 && comment.length > 0;
+    const onSubmit = (e) => {
+        e.preventDefault();
+        setName('');
+        setComment('');
+        const date = new Date().toDateString();
+        console.log(name, comment, date);
+     
+    }
+   
 
-const ConfirmationText = () => (
-    <p>Tack för din kommentar!</p>
-)
+    return ( 
+        
+        <form onSubmit = {onSubmit}  disabled={!isEnabled}>
+            <input type="text" placeholder="Namn" value={name}
+                onChange={(e) => {
+                    setName(e.target.value);
+                }} /> <br />
+           
+            <textarea type="text" placeholder="Skriv en kommentar här..." value={comment}
+                onChange={(e) => {
+                    setComment(e.target.value);
+                }}  ></textarea>
+            <button className={styles.submit}>Skicka</button>
+            
+        </form>
+    )
+}
 
-const Form = ({ isSent }) => isSent ? <KommentarForm /> : <ConfirmationText />
+
+
+
 
 export default Form;
