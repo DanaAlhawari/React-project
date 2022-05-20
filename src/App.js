@@ -2,10 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import Header from './Header';
 import styles from "./App.module.css";
 import Startsida from './Startsida';
-import Receptsida from './recipes/Receptsida';
-import Bakelser from './categories.jsx/Bakelser';
-import Kakor from './categories.jsx/Kakor';
-import Tartor from "./categories.jsx/Tartor";
+import Receptsida from './Receptsida';
+import Kategorisida from './Kategorisida';
+
 
 
 const App = () =>(
@@ -15,10 +14,9 @@ const App = () =>(
       <Header/>
       <Routes>
         <Route path="/" element={<Startsida />} />
-        <Route path="Kategorisida/Bakelser" element={<Bakelser />} />
-        <Route path="Kategorisida/Kakor" element={<Kakor />} />
-        <Route path="Kategorisida/Tartor" element={<Tartor />} />
-        <Route path="Receptsida" element={<Receptsida />} />
+        <Route path="Kategorisida/:categories/recipes" element={<Kategorisida />} />
+     
+        <Route path="/recipes/:recipesId" element={<Receptsida />} />
       </Routes>
       
       
