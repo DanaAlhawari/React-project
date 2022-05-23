@@ -1,46 +1,54 @@
-*{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
+
 .font {
     font-family: 'Montserrat', sans-serif;
-    background-color:#FFF8F0;
-    
+    background-color: #FFF8F0;
+
 }
-.tittle{
+
+.tittle {
     text-align: center;
     text-transform: uppercase;
 }
-.tittle h1{
+
+.tittle h1 {
     letter-spacing: 10px;
-    font-size:50px;
+    font-size: 50px;
     font-weight: bold;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
-.h1{
+
+.h1 {
     color: #8B6E4E;
     text-decoration: none;
 }
-.tittle h2{
+
+.tittle h2 {
     font-weight: 500;
     letter-spacing: 4px;
     margin-top: 0px;
     color: #8B6E4E;
 }
+
 /*kategori knapper*/
-.categoriButton{
+.categoriButton {
     width: 60%;
     margin: auto;
     text-align: center;
 }
-.btn1{
-   background-color: #EAEEC5;
+
+.btn1 {
+    background-color: #EAEEC5;
     border: none;
     padding: 15px 70px;
     text-align: center;
     font-size: 16px;
     margin: 4px 10px;
 }
+
 .btn2 {
     background-color: #EDC5C5;
     border: none;
@@ -49,6 +57,7 @@ padding: 0;
     font-size: 16px;
     margin: 4px 10px;
 }
+
 .btn3 {
     background-color: #9D7F84;
     border: none;
@@ -57,17 +66,19 @@ padding: 0;
     font-size: 16px;
     margin: 4px 10px;
 }
+
 .activeLink {
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
-   
+
 }
 
 .inactiveLink {
     text-decoration: none;
 }
-/**/
+
+/*
 .flexContainer{
     width: 90%;
     margin: 3% auto;
@@ -92,42 +103,50 @@ padding: 8px 16px;
 }
 .cardText > p{
     padding: 6px 12px;
-}
+}*/
 /*receptsida*/
-.receptFlexContainer{
+
+.receptFlexContainer {
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 3% auto;
 }
-.receptFlexContainer > div{
-    width: 70%;
+
+.receptFlexContainer>div {
+    width: 80%;
     margin: auto;
     line-height: 30px;
 }
-.receptCardText{
+
+.receptCardText {
     position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width:auto;
-        height: auto;
-        background-color: #EDC5C5;
-        padding: 12px 16px;
-        opacity: 0.8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 80%;
+    background-color: #EDC5C5;
+    padding: 12px 16px;
+    opacity: 0.8;
 }
-.receptCardText > p{
+
+.receptCardText>p {
     padding: 12px 24px;
 }
-.receptCardText>h2{
-        text-align: center;
+
+.receptCardText>h2 {
+    text-align: center;
 }
-h3{
-    font-size:40px;
+
+h3 {
+    font-size: 40px;
     color: #8B6E4E;
     text-align: center;
     margin: 8px auto;
 }
-input[type=text], textarea {
+
+input[type=text],
+textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px auto;
@@ -153,7 +172,8 @@ input[type=text], textarea {
     color: #8B6E4E;
 }
 
-.form , form {
+.form,
+form {
     width: 80%;
     margin: auto;
     border-radius: 5px;
