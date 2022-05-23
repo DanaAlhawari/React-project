@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from './Header';
 import styles from "./App.module.css";
 import Startsida from './Startsida';
-import Receptsida from './Receptsida';
+import Receptsida from './recipes/Receptsida';
 import Kategorisida from './Kategorisida';
 import 'bootstrap/dist/css/bootstrap.css'; 
 

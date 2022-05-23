@@ -2,7 +2,7 @@ import Form from '../Form';
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from 'react-router-dom';
-import styles from "./App.module.css";
+import styles from "../App.module.css";
 
 const imgStyle = {
     width: "100%",
