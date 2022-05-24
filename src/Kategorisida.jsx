@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useParams } from 'react-router-dom';
-import { Container, Row ,Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import Header from './Header'
 const imgStyle = {
     width: "100%",
     height: "450px",
@@ -43,7 +44,8 @@ useEffect(() => {
                             <div style={textStyle}>
                                 <h2><b>{recept.title}</b> {recept.avgRating}</h2>
                                 <p> {recept.description}</p>
-                                <b>{recept.categories} || {recept.timeInMins} Minuter</b>
+                              <b>{recept.categories} || {recept.timeInMins} Minuter</b>
+                               <Header recept={recept.length}/>
                             </div>
                         </NavLink>
                    
