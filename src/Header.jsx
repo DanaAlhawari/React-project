@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import styles from "./App.module.css";
+import { NavLink } from "react-router-dom"
+import styles from "./App.module.css"
 import SearchBar from "./SearchBar"
 
 const Btn1Style = {
