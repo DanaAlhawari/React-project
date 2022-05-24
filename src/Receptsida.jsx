@@ -3,7 +3,20 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import styles from "./App.module.css";
-
+import ReactStars from "react-rating-stars-component";
+const ratingChanged = (newRating) => {
+   console.log(newRating);
+};
+ const rattDivStyle = {
+    width: "50%",
+    height: "200px",
+    margin: "auto",
+    marginBottom: "2%",
+    textAlign: "center",
+    color: "#8B6E4E",
+    backgroundColor: 'rgb(227, 215, 200)',
+    padding: "16px 32px"
+}
 const imgStyle = {
     width: "100%",
     height: "auto",
@@ -26,18 +39,24 @@ useEffect(() => {
 
 
     return (
-  
-        <>
-
-{Recept ? <>
-                    
-                    
-               
+           <>
+           {Recept ? <>  
             <div className={styles.receptFlexContainer}>
             <div key={Recept.id}>
             <img alt={Recept.title} src={Recept.imageUrl } style={imgStyle} />
             <div className={styles.receptCardText}>
-                <h2><b>{Recept.title}</b> {Recept.avgRating}</h2>
+                  <h2><b>{Recept.title}</b>
+                    <ReactStars
+                        count={5}
+                        edit= {false}
+                        //onChange={ratingChanged}
+                        size={35}  
+                        isHalf= {true}
+                        color= {'#8B6E4E'}
+                        activeColor={"#EAEEC5"}
+                       //filledIcon= {<i className="fa fa-star" />}
+                        value={Recept.avgRating}                                
+                /> {Recept.avgRating}</h2>
                 <p> {Recept.description}
                 <ol key={Recept.id}>
                     {Recept.instructions.map(instruction =>
@@ -48,14 +67,25 @@ useEffect(() => {
         </div>
             </div>
             </> : <>Loading...</>}
+            <div style= {rattDivStyle}>
+                <h3>Vad tycker du om recept</h3>
+                <p>Klicka på en stjärna för att ge ditt btyg</p>
+                <p><ReactStars 
+                    count={5}
+                    // edit= {false}
+                    onChange={ratingChanged}
+                    size={35}  
+                    isHalf= {true}
+                    color= {'#8B6E4E'}
+                    activeColor={"#EAEEC5"} 
+                    justifyContent={false}
+                    /></p>
+            </div>
              <div className={styles.form}>
                 <h3>Kommentarer</h3>
                     <Form  />
                 </div>
-            </>
-        
-        
-        
+            </>    
    
   );
 
