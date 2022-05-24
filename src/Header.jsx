@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./App.module.css";
+import SearchBar from "./SearchBar"
 
 const Btn1Style = {
     color: '#8B6E4E'
@@ -13,7 +14,7 @@ const Header = () => (
             <h1 ><NavLink to="/" className={styles.h1}>Peppers</NavLink></h1>
             <h2>Pasteries</h2>
         </div>
-        <div>sök fält Ingrida</div>
+        <div><SearchBar /></div>
         <div  className={styles.categoriButton}>
             <button className={styles.btn1}><NavLink to="Kategorisida/Bakelser/recipes" className={({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>BAKELSER </NavLink></button>
           <button className={styles.btn2}><NavLink to="Kategorisida/Kakor/recipes" className={({isActive}) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>KAKOR</NavLink></button>
