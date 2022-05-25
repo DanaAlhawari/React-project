@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import styles from "./App.module.css";
 import ReactStars from "react-rating-stars-component";
 const ratingChanged = (newRating) => {
+    console.log('Tack för ditt btyg')
    console.log(newRating);
 };
  const rattDivStyle = {
