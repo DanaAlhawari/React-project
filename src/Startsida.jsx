@@ -47,7 +47,7 @@ const Recept = () => {
               {isLoading ?
                <p>Laddar...</p> : receptList.length === 0 ?
                    <p>Inga bakverk hittades!</p> : receptList.map((recept) =>
-                <Col sm={12}  md={4}  key={recept._id}>
+                <Col sm={12}  md={6} lg={4} key={recept._id}>
                         <NavLink to={`/recipes/${recept._id}`} style={receptLink}>
                             <img alt={recept.title} src={recept.imageUrl} style={imgStyle} />
                             <div style={textStyle}>
