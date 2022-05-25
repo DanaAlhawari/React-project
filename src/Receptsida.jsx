@@ -41,8 +41,8 @@ useEffect(() => {
     return (
            <>
            {Recept ? <>  
-            <div className={styles.receptFlexContainer}>
-            <div key={Recept.id}>
+            <div className={styles.receptFlexContainer} key={Recept._id}>
+            <div >
             <img alt={Recept.title} src={Recept.imageUrl } style={imgStyle} />
             <div className={styles.receptCardText}>
                   <h2><b>{Recept.title}</b>
@@ -52,15 +52,15 @@ useEffect(() => {
                         //onChange={ratingChanged}
                         size={35}  
                         isHalf= {true}
-                        color= {'#8B6E4E'}
-                        activeColor={"#EAEEC5"}
+                         color= {'#EAEEC5'}
+                        activeColor= {"#8B6E4E"}
                        //filledIcon= {<i className="fa fa-star" />}
                         value={Recept.avgRating}                                
-                /> {Recept.avgRating}</h2>
+                /> </h2>
                 <p> {Recept.description}
-                <ol key={Recept.id}>
+                <ol key={Recept._id}>
                     {Recept.instructions.map(instruction =>
-                    <li key={Recept.id}> {instruction}</li>)}
+                    <li > {instruction}</li>)}
                </ol>
                 <b>{Recept.categories} || {Recept.timeInMins} Minuter</b></p>
             </div>
