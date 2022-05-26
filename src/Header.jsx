@@ -10,17 +10,18 @@ const Btn3Style = {
 };
 const Header = () => (
     <Container>
-        <Row><Col className={styles.tittle}>
-        
+        <Row>
+            <Col className={styles.tittle}>
             <h1 ><NavLink to="/" className={styles.h1}>Peppers</NavLink></h1>
             <h2>Pasteries</h2>
-        
-       </Col> </Row><Row><Col className={styles.categoriButton}>
-       
+            </Col>
+        </Row>
+        <Row>
+            <Col className={styles.categoriButton}>
             <button className={styles.btn1}><NavLink to="Kategorisida/Bakelser/recipes" className={({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>BAKELSER </NavLink></button>
-          <button className={styles.btn2}><NavLink to="Kategorisida/Kakor/recipes" className={({isActive}) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>KAKOR</NavLink></button>
-          <button className={styles.btn3}><NavLink to="Kategorisida/Tårtor/recipes" className={({isActive}) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn3Style}>TÅRTOR</NavLink></button>
-        </Col>
+            <button className={styles.btn2}><NavLink to="Kategorisida/Kakor/recipes" className={({isActive}) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>KAKOR</NavLink></button>
+            <button className={styles.btn3}><NavLink to="Kategorisida/Tårtor/recipes" className={({isActive}) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn3Style}>TÅRTOR</NavLink></button>
+            </Col>
         </Row>
     </Container>
 )

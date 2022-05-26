@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import styles from "./App.module.css";
 import ReactStars from "react-rating-stars-component";
+import { Container, Row, Col, Card } from "react-bootstrap";
 const ratingChanged = (newRating) => {
     console.log('Tack för ditt btyg')
    console.log(newRating);
@@ -12,15 +13,13 @@ const ratingChanged = (newRating) => {
     width: "50%",
     height: "200px",
     margin: "auto",
-    marginBottom: "2%",
     textAlign: "center",
     color: "#8B6E4E",
     backgroundColor: 'rgb(227, 215, 200)',
-    padding: "16px 32px"
+    padding: "16px 32px",
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)"
 }
 const imgStyle = {
-    width: "100%",
-    height: "auto",
    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)"
 }
 
@@ -40,53 +39,57 @@ useEffect(() => {
 
 
     return (
-           <>
-           {Recept ? <>  
-            <div className={styles.receptFlexContainer} key={Recept._id}>
-            <div >
-            <img alt={Recept.title} src={Recept.imageUrl } style={imgStyle} />
-            <div className={styles.receptCardText}>
-                  <h2><b>{Recept.title}</b>
-                    <ReactStars
-                        count={5}
-                        edit= {false}
-                        //onChange={ratingChanged}
-                        size={35}  
-                        isHalf= {true}
-                         color= {'#EAEEC5'}
-                        activeColor= {"#8B6E4E"}
-                       //filledIcon= {<i className="fa fa-star" />}
-                        value={Recept.avgRating}                                
-                /> </h2>
-                <p> {Recept.description}
-                <ol key={Recept._id}>
-                    {Recept.instructions.map(instruction =>
-                    <li > {instruction}</li>)}
-               </ol>
-                <b>{Recept.categories} || {Recept.timeInMins} Minuter</b></p>
-            </div>
-        </div>
-            </div>
-            </> : <>Loading...</>}
-            <div style= {rattDivStyle}>
-                <h3>Vad tycker du om recept</h3>
-                <p>Klicka på en stjärna för att ge ditt btyg</p>
-                <p><ReactStars 
-                    count={5}
-                    // edit= {false}
-                    onChange={ratingChanged}
-                    size={35}  
-                    isHalf= {true}
-                    color= {'#8B6E4E'}
-                    activeColor={"#EAEEC5"} 
-                    justifyContent={false}
-                    /></p>
-            </div>
-             <div className={styles.form}>
-                <h3>Kommentarer</h3>
-                    <Form  />
-                </div>
-            </>    
+           <Container>   
+                <Row>{Recept ?
+                    <Col key={Recept._id} >  
+                     <Card  className={styles.receptFlexContainer}>
+                        <Card.Img alt={Recept.title} src={Recept.imageUrl} style={imgStyle} />
+                        <Card.Body className={styles.receptCardText}>
+                            <h2>{Recept.title}</h2>                               
+                                <Card.Text>
+                                     {Recept.description}
+                                       <ol>
+                                        {Recept.instructions.map(instruction =>
+                                        <li > {instruction}</li>)}
+                                       </ol>
+                                        <strong>{Recept.categories} || {Recept.timeInMins} Minuter </strong>
+                                    <ReactStars
+                                    count={5}
+                                    edit= {false}    
+                                    size={35}  
+                                    isHalf= {true}
+                                    color= {'#EAEEC5'}
+                                    activeColor= {"#8B6E4E"}
+                                    value={Recept.avgRating}  /> 
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    : <>Loading...</>}
+                </Row>
+            <br/>
+                <Row style= {rattDivStyle}>
+                    <Col > 
+                        <h3>Vad tycker du om recept</h3>
+                        <p>Klicka på en stjärna för att ge ditt btyg</p>
+                        <ReactStars 
+                            count={5}
+                            onChange={ratingChanged}
+                            size={35}  
+                            isHalf= {true}
+                            color= {'#EAEEC5'}
+                            activeColor= {"#8B6E4E"}
+                            />                      
+                    </Col> 
+                 </Row>
+            <br/>
+                <Row  className={styles.form}>
+                    <Col >
+                            <h3>Kommentarer</h3>
+                                <Form  />
+                    </Col> 
+            </Row>
+            </Container>    
    
   );
 
