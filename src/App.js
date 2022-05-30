@@ -17,8 +17,8 @@ const App = () =>(
       <Routes>
         <Route path="/" element={<Startsida />} />
         <Route path="Kategorisida/:categories/recipes" element={<Kategorisida />} />
-     
-        <Route path="/recipes/:recipesId" element={<Receptsida />} />
+{/*         <Route path="/categories/recipes" element={<Header />} />
+ */}        <Route path="/recipes/:recipesId" element={<Receptsida />} />
       </Routes>
       
       
