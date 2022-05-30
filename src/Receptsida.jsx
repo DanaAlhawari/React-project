@@ -70,8 +70,8 @@ useEffect(() => {
             <br/>
                 <Row style= {rattDivStyle}>
                     <Col > 
-                        <h3>Vad tycker du om receptet</h3>
-                        <p>Klicka på en stjärna för att ge ditt betyg</p>
+                        <h3>Vad tycker du om receptet?</h3>
+                        <p>Klicka på en eller flera stjärnor för att ge ditt betyg, tack!</p>
                         <ReactStars 
                             count={5}
                             onChange={ratingChanged}
