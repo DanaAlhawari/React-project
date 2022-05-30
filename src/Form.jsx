@@ -7,24 +7,21 @@ const Form = () => {
      const [name, setName] = useState('');
     const [comment, setComment] = useState('');
     const isEnabled = () => {
-        if (name.length > 0 && comment.length > 0) {
-            const date = new Date().toDateString();
-            console.log(name, comment, date); 
+        if (name.length > 0 && comment.length > 0) { 
+             const date = new Date().toDateString();
+             console.log(name, comment, date); 
             return console.log('Tack för din kommentarer');  
         } else {    
             return console.log('fyll i alla fält');
         }   
     }
-    
     const onSubmit = (e) => {
         e.preventDefault();
         setName('');
         setComment('');
-     
-     
+       
     }
    
-
     return ( 
         
         <form onSubmit = {onSubmit}  >
