@@ -2,7 +2,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useParams } from 'react-router-dom';
-import { Container, Row ,Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import Header from './Header'
+import ReactStars from "react-rating-stars-component";
 const imgStyle = {
     width: "100%",
     height: "450px",
@@ -17,7 +19,7 @@ const textStyle = {
       height: "400px",
 }
 
-const Bakelser = () => {
+const Kategorisida = () => {
     const {categories}  = useParams();
     const [receptCategory, setRecept] = useState();
 useEffect(() => {   
@@ -29,11 +31,8 @@ useEffect(() => {
 
    //console.log(receptCategory);
 
-     return (
-  
-        
+     return (   
          <Container>   
- 
           <Row>
               {receptCategory?.map((recept) =>
                 <Col sm={12}  md={4} >
@@ -41,9 +40,20 @@ useEffect(() => {
                         <NavLink to={`/recipes/${recept._id}`} style={receptLink}>
                             <img alt={recept.title} src={recept.imageUrl} style={imgStyle} />
                             <div style={textStyle}>
-                                <h2><b>{recept.title}</b> {recept.avgRating}</h2>
+                                <h2><b>{recept.title}</b>
+                                  <ReactStars
+                                      count={5}
+                                      edit= {false}
+                                      //onChange={ratingChanged}
+                                      size={35}  
+                                      isHalf= {true}
+                                      color= {'#8B6E4E'}
+                                      activeColor= {"#EAEEC5"}
+                                      value={recept.avgRating}                                
+                                /> {recept.avgRating}</h2>
                                 <p> {recept.description}</p>
-                                <b>{recept.categories} || {recept.timeInMins} Minuter</b>
+                              <b>{recept.categories} || {recept.timeInMins} Minuter</b>
+                               <Header recept={recept.length}/>
                             </div>
                         </NavLink>
                    
@@ -54,4 +64,4 @@ useEffect(() => {
        
   ) 
 }
-export default Bakelser;
+export default Kategorisida;

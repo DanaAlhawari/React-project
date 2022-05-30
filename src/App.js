@@ -4,6 +4,7 @@ import styles from "./App.module.css";
 import Startsida from './Startsida';
 import Receptsida from './recipes/Receptsida';
 import Kategorisida from './Kategorisida';
+
 import 'bootstrap/dist/css/bootstrap.css'; 
 
 
@@ -12,6 +13,7 @@ const App = () =>(
    
    <div className={styles.font}>
       <Header/>
+      
       <Routes>
         <Route path="/" element={<Startsida />} />
         <Route path="Kategorisida/:categories/recipes" element={<Kategorisida />} />
