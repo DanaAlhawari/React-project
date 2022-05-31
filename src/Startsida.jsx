@@ -16,6 +16,9 @@ const textStyle = {
     backgroundColor: "#E3D7C8",
     padding: "8px 16px",
       /*height: "400px",*/
+} 
+const searchstyle ={
+    width: "61%"
 }
 
 const Recept = () => {
@@ -40,7 +43,7 @@ const Recept = () => {
       <Container>  
            <Row>
             <Col>
-               <Form.Control type="text" onChange={event => setSearchText(event.target.value)}></Form.Control>
+               <Form.Control type="text" style={searchstyle} onChange={event => setSearchText(event.target.value)}></Form.Control>
            </Col>
        </Row>
           <Row>
