@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { Container, Row, Col,Form } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
 
 const imgStyle = {
@@ -17,13 +17,12 @@ const textStyle = {
     padding: "8px 16px",
       /*height: "400px",*/
 } 
-const searchstyle ={
-    width: "61%"
-}
 
-const Recept = () => {
+
+// searchText till kategorisida och receptsida, väntar på backend
+const Recept = ({searchText}) => {
     const [receptList, setRecept] = useState([]);
-    const [searchText, setSearchText] = useState ("")
+  
     const [isLoading, setIsLoading] = useState (false)
     useEffect(() => {
     setIsLoading (true)
@@ -41,11 +40,6 @@ const Recept = () => {
 
   return (
       <Container>  
-           <Row>
-            <Col>
-               <Form.Control type="text" style={searchstyle} onChange={event => setSearchText(event.target.value)}></Form.Control>
-           </Col>
-       </Row>
           <Row>
               {isLoading ?
                <p>Laddar...</p> : receptList.length === 0 ?

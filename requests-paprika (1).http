@@ -303,6 +303,11 @@ GET https://paprika-bxu3y.ondigitalocean.app/recipes?query=pap HTTP/1.1
 
 ###
 
+
+GET https://paprika-bxu3y.ondigitalocean.app//categories/Bakelser/recipes?query=ahl HTTP/1.1
+
+###
+
 GET https://paprika-bxu3y.ondigitalocean.app/recipes/626c5d10ada26641c5d81e3a HTTP/1.1
 
 ### visar alla kategorier
@@ -317,6 +322,28 @@ GET https://paprika-bxu3y.ondigitalocean.app/categories/Kakor/recipes HTTP/1.1
 
 ### ska visa alla tårtor
 GET https://paprika-bxu3y.ondigitalocean.app/categories/Tårtor/recipes HTTP/1.1
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes/6293eabff72d1a7c0ea3e2fb/ratings
+Content-Type: application/json
+
+{
+    "rating": 3
+}
+###
+
+GET https://paprika-bxu3y.ondigitalocean.app/recipes/6293eabff72d1a7c0ea3e2fb/comments
+
+###
+
+POST https://paprika-bxu3y.ondigitalocean.app/recipes/6293eabff72d1a7c0ea3e2fb/comments
+Content-Type: application/json
+
+{
+    "comment": "Mycket gott!",
+    "name": "Jonatan"
+}
 
 ###
 

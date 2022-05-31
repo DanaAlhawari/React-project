@@ -19,15 +19,15 @@ const textStyle = {
       height: "400px",
 }
 
-const Kategorisida = () => {
+const Kategorisida = ({searchText}) => {
     const {categories}  = useParams();
     const [receptCategory, setRecept] = useState();
 useEffect(() => {   
-     fetch(`https://paprika-bxu3y.ondigitalocean.app/categories/${categories}/recipes`)
+     fetch(`https://paprika-bxu3y.ondigitalocean.app/categories/${categories}/recipes?query=${searchText}`)
          .then(res => res.json())
          .then(data => setRecept(data))
     
-}, [categories])
+}, [categories, searchText])
 
    //console.log(receptCategory);
 
