@@ -6,7 +6,7 @@ import styles from "./App.module.css";
 import ReactStars from "react-rating-stars-component";
 import { Container, Row, Col, Card } from "react-bootstrap";
 const ratingChanged = (newRating) => {
-    console.log('Tack för ditt btyg')
+    console.log('Tack för ditt betyg')
    console.log(newRating);
 };
  const rattDivStyle = {
