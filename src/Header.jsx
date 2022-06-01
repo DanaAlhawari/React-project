@@ -32,16 +32,9 @@ const Header = ({ setSearchText }) => {
         </Row>
         <SearchBar setSearchText={setSearchText} />
         <Row> 
-            {categories.map(category => <Col className={styles.categoriButton}><button className={styles.btn1}><NavLink to={`Kategorisida/${category.name}/recipes`} className= {({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>{category.name}{category.count}</NavLink></button></Col>)}
+            {categories.map(category => <Col className={styles.categoriButton}><button className={styles.btn1}><NavLink to={encodeURI(`Kategorisida/${category.name}/recipes`)} className= {({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>{category.name}{category.count}</NavLink></button></Col>)}
         </Row>
     </Container>
     </>
 } 
 export default Header;
-
-
-
-
-
-
-
