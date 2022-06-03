@@ -1,5 +1,5 @@
 // 4.1 Kommentarsfunktion
-// Fungerar inte riktigt som den ska än
+
 import {useState} from 'react'
 import styles from "./App.module.css";
  

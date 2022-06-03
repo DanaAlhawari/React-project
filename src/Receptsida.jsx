@@ -1,3 +1,5 @@
+// 4 Receptsida
+
 import Form from './Form';
 import { useState } from "react";
 import { useEffect } from "react";
@@ -36,7 +38,7 @@ useEffect(() => {
 
 
 //console.log(Recept)
-
+// 2.4 Tid det tar att göra receptet
 
     return (
            <Container>   
