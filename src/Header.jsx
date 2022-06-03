@@ -9,6 +9,9 @@ const Btn1Style = {
 const Btn3Style = {
   color: '#EAEEC5'
 };
+const containerStyle = {
+    marginBottom: '1%'
+}
 const Header = ({ setSearchText }) => {
     const [categories, setCategories] = useState([]);
 
@@ -23,14 +26,16 @@ const Header = ({ setSearchText }) => {
     )
     console.log(categories)
     return <>
-    <Container>
+    <Container style={containerStyle}>
         <Row>
             <Col className={styles.tittle}>
             <h1 ><NavLink to="/" className={styles.h1}>Peppers</NavLink></h1>
             <h2>Pasteries</h2>
             </Col>
-        </Row>
-        <SearchBar setSearchText={setSearchText} />
+            </Row>
+            <br/>
+            <SearchBar setSearchText={setSearchText} />
+            <br/>
         <Row> 
             {categories.map(category => <Col className={styles.categoriButton}><button className={styles.btn1}><NavLink to={encodeURI(`Kategorisida/${category.name}/recipes`)} className= {({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>{category.name}{category.count}</NavLink></button></Col>)}
         </Row>
