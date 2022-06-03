@@ -1,7 +1,8 @@
 import { Row, Col,Form } from "react-bootstrap";
 
 const searchstyle ={
-    width: "61%"
+    width: "87%",
+    margin: 'auto'
 }
 
 

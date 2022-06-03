@@ -334,11 +334,11 @@ Content-Type: application/json
 }
 ###
 
-GET https://paprika-bxu3y.ondigitalocean.app/recipes/6293eabff72d1a7c0ea3e2fb/comments
+GET https://paprika-bxu3y.ondigitalocean.app/recipes/62836e0e5fcfd8bcf9296fa3/comments
 
 ###
-
-POST https://paprika-bxu3y.ondigitalocean.app/recipes/6293eabff72d1a7c0ea3e2fb/comments
+//Sega kolasnittar med ingefära
+POST https://paprika-bxu3y.ondigitalocean.app/recipes/62836e0e5fcfd8bcf9296fa3/comments
 Content-Type: application/json
 
 {
