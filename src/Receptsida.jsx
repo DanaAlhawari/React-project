@@ -36,6 +36,10 @@ const Receptsida = () => {
             .then(data => setRecept(data))
 
     }, [recipesId])
+
+
+    // 2.4 Tid det tar att göra receptet
+    
     return (
         <Container>
             <Row>{Recept ?
