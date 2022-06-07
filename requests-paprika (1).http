@@ -14,8 +14,98 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 17,
-    "ingredients": [ "100 g rumstempererat smör", "2 1/3 dl strösocker", "1 msk sirap", "2 ägg", "1 1/2 dl vetemjöl", "1/2 tsk salt", "1 1/2 tsk vaniljsocker", "1 dl kakao", "2 dubbeldaim (à 56 g)", "smör (till formen)", "ströbröd (till formen)", "5 gelatinblad", "1/2 l färska jordgubbar","3 äggulor","2 dl florsocker", "6 dl vispgrädde", "1 l färska jordgubbar"],
-    "instructions": [ "Sätt ugnen på 175°C.", "Botten: Vispa smör, socker och sirap pösigt. Rör ner äggen.", "Blanda vetemjöl, salt, vaniljsocker och kakao. Hacka daimen grovt. Tillsätt mjölblandningen och daimen i smeten. Bre ut smeten i en smord, bröad springform, ca 24 cm i diameter (för 12 bitar).", "Grädda i ca 20 minuter. Låt botten kallna. Ta bort ringen på formen och torka bort ströbrödet. Sätt tillbaka ringen på botten.", "Fyllning: Blötlägg gelatinbladen 5 minuter i kallt vatten.", "Mixa jordgubbarna i matberedare eller med stavmixer till en slät puré.", "Vispa äggulor och florsocker luftigt. Vispa grädden till lös konsistens.", "Värm 1/10 av jordgubbspurén i en kastrull. Ta upp gelatinbladen och tillsätt i kastrullen. Låt det smälta på svag värme. Rör ner gelatinblandningen i resten av purén.", "Blanda försiktigt ner äggsmeten i purén och sedan grädden till en slät smet. Häll smeten över bottnen. Ställ minst 4 timmar i kylskåp eller i frysen. Tina 4 timmar i rumstemperatur vid serveringen.", "Toppa tårtan med rensade jordgubbar."]
+    "instructions": [ "Sätt ugnen på 175°C.", "Botten: Vispa smör, socker och sirap pösigt. Rör ner äggen.", "Blanda vetemjöl, salt, vaniljsocker och kakao. Hacka daimen grovt. Tillsätt mjölblandningen och daimen i smeten. Bre ut smeten i en smord, bröad springform, ca 24 cm i diameter (för 12 bitar).", "Grädda i ca 20 minuter. Låt botten kallna. Ta bort ringen på formen och torka bort ströbrödet. Sätt tillbaka ringen på botten.", "Fyllning: Blötlägg gelatinbladen 5 minuter i kallt vatten.", "Mixa jordgubbarna i matberedare eller med stavmixer till en slät puré.", "Vispa äggulor och florsocker luftigt. Vispa grädden till lös konsistens.", "Värm 1/10 av jordgubbspurén i en kastrull. Ta upp gelatinbladen och tillsätt i kastrullen. Låt det smälta på svag värme. Rör ner gelatinblandningen i resten av purén.", "Blanda försiktigt ner äggsmeten i purén och sedan grädden till en slät smet. Häll smeten över bottnen. Ställ minst 4 timmar i kylskåp eller i frysen. Tina 4 timmar i rumstemperatur vid serveringen.", "Toppa tårtan med rensade jordgubbar."],
+    "ingredients": [
+        {
+            "name": "Rumstempererat smör",
+            "amount": 100,
+            "unit": "g"
+        },
+        {
+            "name": "Strösocker",
+            "amount": 2 1/3,
+            "unit": "dl"
+        },
+        {
+            "name": "Ägg",
+            "amount": 2,
+            "unit": "st"
+        },
+        {
+            "name": "Sirap",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {
+            "name": "Vetemjöl",
+            "amount": 1 1/2,
+            "unit": "dl"
+        },
+        {
+            "name": "Salt",
+            "amount": 1/2,
+            "unit": "tsk"
+        },
+        {
+            "name": "Vaniljsocker",
+            "amount": 1 1/2,
+            "unit": "tsk"
+        },
+        {
+            "name": "Kakao",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Dubbeldaim",
+            "amount": 112,
+            "unit": "g"
+        },
+        {
+            "name": "smör (till formen)"
+            
+        },
+        {
+            "name": "ströbröd (till formen)"
+        },
+        {
+            "name": "Gelatinblad",
+            "amount": 5,
+            "unit": "st"
+        },
+        {
+            "name": "Färska jordgubbar",
+            "amount": 1/2,
+            "unit": "l"
+        },
+        {
+            "name": "Äggulor",
+            "amount": 3,
+            "unit": "st"
+        },
+        {
+            "name": "Florsocker",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {
+            "name": "Kakao",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Vispgrädde",
+            "amount": 6,
+            "unit": "dl"
+        },
+        {
+            "name": "Färska jordgubbar",
+            "amount": 1,
+            "unit": "l"
+        }
+
+
+    ]
 }
 
 ###
