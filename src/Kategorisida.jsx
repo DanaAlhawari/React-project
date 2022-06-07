@@ -31,6 +31,9 @@ useEffect(() => {
 
    //console.log(receptCategory);
 
+   // 2.7 Receptkort
+   // 3 Kategorisida
+
      return (   
          <Container>   
           <Row>

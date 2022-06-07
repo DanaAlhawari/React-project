@@ -1,4 +1,7 @@
+// 4 Receptsida
+
 import Form from './Form';
+import CommentList from './CommentList';
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from 'react-router-dom';
@@ -7,9 +10,9 @@ import ReactStars from "react-rating-stars-component";
 import { Container, Row, Col, Card } from "react-bootstrap";
 const ratingChanged = (newRating) => {
     console.log('Tack för ditt betyg')
-   console.log(newRating);
+    console.log(newRating);
 };
- const rattDivStyle = {
+const rattDivStyle = {
     width: "50%",
     height: "200px",
     margin: "auto",
@@ -20,78 +23,79 @@ const ratingChanged = (newRating) => {
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)"
 }
 const imgStyle = {
-   boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)"
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)"
 }
 
+
 const Receptsida = () => {
-    const {recipesId} = useParams();
+    const { recipesId } = useParams();
     const [Recept, setRecept] = useState();
+    useEffect(() => {
+        fetch(`https://paprika-bxu3y.ondigitalocean.app/recipes/${recipesId}`)
+            .then(res => res.json())
+            .then(data => setRecept(data))
+
+    }, [recipesId])
+
+
+    // 2.4 Tid det tar att göra receptet
     
-useEffect(() => {   
-     fetch(`https://paprika-bxu3y.ondigitalocean.app/recipes/${recipesId}`)
-         .then(res => res.json())
-         .then(data => setRecept(data))
-  
-}, [recipesId])
-
-
-//console.log(Recept)
-
-
     return (
-           <Container>   
-                <Row>{Recept ?
-                    <Col key={Recept._id} >  
-                     <Card  className={styles.receptFlexContainer}>
+        <Container>
+            <Row>{Recept ?
+                <Col key={Recept._id} >
+                    <Card className={styles.receptFlexContainer}>
                         <Card.Img alt={Recept.title} src={Recept.imageUrl} style={imgStyle} />
                         <Card.Body className={styles.receptCardText}>
-                            <h2>{Recept.title}</h2>                               
-                                <Card.Text>
-                                     {Recept.description}
-                                       <ol>
-                                        {Recept.instructions.map(instruction =>
+                            <h2>{Recept.title}</h2>
+                            <Card.Text>
+                                {Recept.description}
+                                <ol>
+                                    {Recept.instructions.map(instruction =>
                                         <li > {instruction}</li>)}
-                                       </ol>
-                                        <strong>{Recept.categories} || {Recept.timeInMins} Minuter </strong>
-                                    <ReactStars
+                                </ol>
+                                <strong>{Recept.categories} || {Recept.timeInMins} Minuter </strong>
+                                <ReactStars
                                     count={5}
-                                    edit= {false}    
-                                    size={35}  
-                                    isHalf= {true}
-                                    color= {'#EAEEC5'}
-                                    activeColor= {"#8B6E4E"}
-                                    value={Recept.avgRating}  /> 
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    : <>Loading...</>}
-                </Row>
-            <br/>
-                <Row style= {rattDivStyle}>
-                    <Col > 
-                        <h3>Vad tycker du om receptet?</h3>
-                        <p>Klicka på en eller flera stjärnor för att ge ditt betyg, tack!</p>
-                        <ReactStars 
-                            count={5}
-                            onChange={ratingChanged}
-                            size={35}  
-                            isHalf= {true}
-                            color= {'#EAEEC5'}
-                            activeColor= {"#8B6E4E"}
-                            />                      
-                    </Col> 
-                 </Row>
-            <br/>
-                <Row  className={styles.form}>
-                    <Col >
-                            <h3>Kommentarer</h3>
-                                <Form  />
-                    </Col> 
+                                    edit={false}
+                                    size={35}
+                                    isHalf={true}
+                                    color={'#EAEEC5'}
+                                    activeColor={"#8B6E4E"}
+                                    value={Recept.avgRating} />
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                : <>Loading...</>}
             </Row>
-            </Container>    
-   
-  );
+            <br />
+            <Row style={rattDivStyle}>
+                <Col >
+                    <h3>Vad tycker du om receptet?</h3>
+                    <p>Klicka på en eller flera stjärnor för att ge ditt betyg, tack!</p>
+                    <ReactStars
+                        count={5}
+                        onChange={ratingChanged}
+                        size={35}
+                        isHalf={true}
+                        color={'#EAEEC5'}
+                        activeColor={"#8B6E4E"}
+                    />
+                </Col>
+            </Row>
+            <br />
+            <Row className={styles.form}>
+                <Col >
+                    <h3>Kommentarer</h3>
+                    <Form recipesId={recipesId} />
+                </Col>
+            </Row>
+            <br />
+            <CommentList recipesId={recipesId} />
+        </Container>
+
+    );
 
 }
 

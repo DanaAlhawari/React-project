@@ -1,3 +1,5 @@
+// 2 Startsida
+
 import { useState } from "react";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
@@ -37,6 +39,8 @@ const Recept = ({searchText}) => {
 }, [searchText])
 
     //console.log(receptList);
+
+// 2.7 Receptkort
 
   return (
       <Container>  
