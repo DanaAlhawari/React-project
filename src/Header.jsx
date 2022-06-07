@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { useState, useEffect } from "react"
 import styles from "./App.module.css"
-import SearchBar from "./searchBar"
+import SearchBar from "./SearchBar"
 import { Container, Row, Col } from "react-bootstrap";
 const Btn1Style = {
     color: '#8B6E4E'
