@@ -25,6 +25,10 @@ const Header = ({ setSearchText }) => {
     
     )
     console.log(categories)
+
+    // 2.1 Sökrutan
+    // 2.2 kategoriknappar
+    // 2.3 Antal recept 
     return <>
     <Container style={containerStyle}>
         <Row>
