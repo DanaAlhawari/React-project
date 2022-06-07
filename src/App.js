@@ -8,6 +8,8 @@ import Kategorisida from './Kategorisida';
 
 import 'bootstrap/dist/css/bootstrap.css'; 
 
+// 5 REST-API
+// 6 Skapa react-app
 
 const App = () => {
   const [searchText, setSearchText] = useState ("")

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { useState, useEffect } from "react"
 import styles from "./App.module.css"
-import SearchBar from "./SearchBar"
+import SearchBar from "./searchBar"
 import { Container, Row, Col } from "react-bootstrap";
 const Btn1Style = {
     color: '#8B6E4E'
@@ -25,6 +25,10 @@ const Header = ({ setSearchText }) => {
     
     )
     console.log(categories)
+
+    // 2.1 Sökrutan
+    // 2.2 kategoriknappar
+    // 2.3 Antal recept 
     return <>
     <Container style={containerStyle}>
         <Row>
@@ -37,7 +41,7 @@ const Header = ({ setSearchText }) => {
             <SearchBar setSearchText={setSearchText} />
             <br/>
         <Row> 
-            {categories.map(category => <Col className={styles.categoriButton}><button className={styles.btn1}><NavLink to={encodeURI(`Kategorisida/${category.name}/recipes`)} className= {({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>{category.name}{category.count}</NavLink></button></Col>)}
+            {categories.map(category => <Col className={styles.categoriButton}><button className={styles.btn1}><NavLink to={encodeURI(`Kategorisida/${category.name}/recipes`)} className= {({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>{category.name} ({category.count})</NavLink></button></Col>)}
         </Row>
     </Container>
     </>
