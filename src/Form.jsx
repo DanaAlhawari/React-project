@@ -26,7 +26,7 @@ const Form = ({ recipesId }) => {
                 if (res.status === 200) {
                     setName("");
                     setComment("");
-                    setMessage("Tack för din kommentarer");
+                    setMessage("Tack för din kommentar");
                 } else {
                     setMessage("Det gick något fel");
                 }
