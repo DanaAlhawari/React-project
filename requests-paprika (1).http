@@ -308,7 +308,7 @@ GET https://paprika-bxu3y.ondigitalocean.app//categories/Bakelser/recipes?query=
 
 ###
 
-GET https://paprika-bxu3y.ondigitalocean.app/recipes/626c5d10ada26641c5d81e3a HTTP/1.1
+GET https://paprika-bxu3y.ondigitalocean.app/recipes/62836e0a5fcfd8bcf9296fa1 HTTP/1.1
 
 ### visar alla kategorier
 
@@ -325,11 +325,11 @@ GET https://paprika-bxu3y.ondigitalocean.app/categories/Tårtor/recipes HTTP/1.1
 
 ###
 
-POST https://paprika-bxu3y.ondigitalocean.app/recipes/6293eabff72d1a7c0ea3e2fb/ratings
+POST https://paprika-bxu3y.ondigitalocean.app/recipes/62836e0e5fcfd8bcf9296fa3/ratings
 Content-Type: application/json
 
 {
-    "rating": 3
+    "rating": 5
 }
 ###
 

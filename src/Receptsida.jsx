@@ -6,10 +6,8 @@ import { useParams } from 'react-router-dom';
 import styles from "./App.module.css";
 import ReactStars from "react-rating-stars-component";
 import { Container, Row, Col, Card } from "react-bootstrap";
-const ratingChanged = (newRating) => {
-    console.log('Tack för ditt betyg')
-    console.log(newRating);
-};
+import RatingsPost from './Ratings';
+
 const rattDivStyle = {
     width: "50%",
     height: "200px",
@@ -28,11 +26,12 @@ const imgStyle = {
 const Receptsida = () => {
     const { recipesId } = useParams();
     const [Recept, setRecept] = useState();
+    const [data, setData] = useState([])
     useEffect(() => {
         fetch(`https://paprika-bxu3y.ondigitalocean.app/recipes/${recipesId}`)
             .then(res => res.json())
             .then(data => setRecept(data))
-
+            
     }, [recipesId])
     return (
         <Container>
@@ -44,6 +43,7 @@ const Receptsida = () => {
                             <h2>{Recept.title}</h2>
                             <Card.Text>
                                 {Recept.description}
+                                                              
                                 <ol>
                                     {Recept.instructions.map(instruction =>
                                         <li > {instruction}</li>)}
@@ -64,29 +64,19 @@ const Receptsida = () => {
                 : <>Loading...</>}
             </Row>
             <br />
-            <Row style={rattDivStyle}>
-                <Col >
-                    <h3>Vad tycker du om receptet?</h3>
-                    <p>Klicka på en eller flera stjärnor för att ge ditt betyg, tack!</p>
-                    <ReactStars
-                        count={5}
-                        onChange={ratingChanged}
-                        size={35}
-                        isHalf={true}
-                        color={'#EAEEC5'}
-                        activeColor={"#8B6E4E"}
-                    />
-                </Col>
-            </Row>
+            
+            <RatingsPost recipesId={recipesId} onChange={false} />
+            
+           
             <br />
             <Row className={styles.form}>
                 <Col >
                     <h3>Kommentarer</h3>
-                    <Form recipesId={recipesId} />
+                    <Form recipesId={recipesId} data={data} setData={setData}/>
                 </Col>
             </Row>
             <br />
-            <CommentList recipesId={recipesId} />
+            <CommentList recipesId={recipesId} data={data} setData={setData}/>
         </Container>
 
     );
