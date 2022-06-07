@@ -7,7 +7,7 @@ const Btn1Style = {
     color: '#8B6E4E'
 };
 const Btn3Style = {
-  color: '#EAEEC5'
+    color: '#EAEEC5'
 };
 const containerStyle = {
     marginBottom: '1%'
@@ -15,14 +15,14 @@ const containerStyle = {
 const Header = ({ setSearchText }) => {
     const [categories, setCategories] = useState([]);
 
-        useEffect(
+    useEffect(
         () => {
             fetch('https://paprika-bxu3y.ondigitalocean.app/categories')
                 .then(res => res.json())
                 .then(data => setCategories(data));
         },
         []
-    
+
     )
     console.log(categories)
 
@@ -30,20 +30,20 @@ const Header = ({ setSearchText }) => {
     // 2.2 kategoriknappar
     // 2.3 Antal recept 
     return <>
-    <Container style={containerStyle}>
-        <Row>
-            <Col className={styles.tittle}>
-            <h1 ><NavLink to="/" className={styles.h1}>Peppers</NavLink></h1>
-            <h2>Pasteries</h2>
-            </Col>
+        <Container style={containerStyle}>
+            <Row>
+                <Col className={styles.tittle}>
+                    <h1 ><NavLink to="/" className={styles.h1}>Peppers</NavLink></h1>
+                    <h2>Pasteries</h2>
+                </Col>
             </Row>
-            <br/>
+            <br />
             <SearchBar setSearchText={setSearchText} />
-            <br/>
-        <Row> 
-            {categories.map(category => <Col className={styles.categoriButton}><button className={styles.btn1}><NavLink to={encodeURI(`Kategorisida/${category.name}/recipes`)} className= {({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>{category.name}{category.count}</NavLink></button></Col>)}
-        </Row>
-    </Container>
+            <br />
+            <Row>
+                {categories.map(category => <Col className={styles.categoriButton}><button className={styles.btn1}><NavLink to={encodeURI(`Kategorisida/${category.name}/recipes`)} className={({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>{category.name} ({category.count})</NavLink></button></Col>)}
+            </Row>
+        </Container>
     </>
-} 
+}
 export default Header;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./App.module.css";
-const Form = ({ recipesId }) => {
+const Form = ({ recipesId, data, setData }) => {
     const [name, setName] = useState("");
     const [comment, setComment] = useState("");
     const [message, setMessage] = useState("");
@@ -25,12 +25,15 @@ const Form = ({ recipesId }) => {
             ).then((res) => {
                 if (res.status === 200) {
                     setName("");
-                    setComment("");
+                    setComment("");            
                     setMessage("Tack för din kommentarer");
+                    return res.json()
                 } else {
                     setMessage("Det gick något fel");
                 }
-            });
+            }).then((newComment) => {
+                setData([...data, newComment])
+            })
         } else {
             setMessage("fyll i alla fält");
 

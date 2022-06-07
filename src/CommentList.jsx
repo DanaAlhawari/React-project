@@ -5,14 +5,14 @@ import styles from "./App.module.css";
 /* const dateStyle = {
     textAlignLast: 'right'
 } */
-const CommentList = ({ recipesId }) => {
-    const [data, setData] = useState([])
+const CommentList = ({ recipesId, data, setData}) => {
+    
     useEffect(() => {
         fetch(`https://paprika-bxu3y.ondigitalocean.app/recipes/${recipesId}/comments`)
             .then((response) => response.json())
             .then((data) => setData(data));
     }, []);
-    console.log(data)
+
     return (
 
         data.map(({ name, comment }) => (
