@@ -52,8 +52,11 @@ const Receptsida = () => {
                             }} className={styles.cardBody}>
                                 <div style={{ backgroundColor: '#FFF8F0', opacity: '0.7', padding: 16 }}>
                                     <h2>{Recept.title}</h2>
-
-                                    <Card.Text>
+                                 <ul>
+                                    {Recept.ingredients.map(ingredient =>
+                                        <li > {ingredient.amount} {ingredient.unit} {ingredient.name}</li>)}
+                                    </ul> 
+                                 <Card.Text>
                                         {Recept.description}
                                         <ol>
                                             {Recept.instructions.map(instruction =>
