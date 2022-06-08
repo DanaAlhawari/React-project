@@ -15,7 +15,95 @@ Content-Type: application/json
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 17,
     "instructions": [ "Sätt ugnen på 175°C.", "Botten: Vispa smör, socker och sirap pösigt. Rör ner äggen.", "Blanda vetemjöl, salt, vaniljsocker och kakao. Hacka daimen grovt. Tillsätt mjölblandningen och daimen i smeten. Bre ut smeten i en smord, bröad springform, ca 24 cm i diameter (för 12 bitar).", "Grädda i ca 20 minuter. Låt botten kallna. Ta bort ringen på formen och torka bort ströbrödet. Sätt tillbaka ringen på botten.", "Fyllning: Blötlägg gelatinbladen 5 minuter i kallt vatten.", "Mixa jordgubbarna i matberedare eller med stavmixer till en slät puré.", "Vispa äggulor och florsocker luftigt. Vispa grädden till lös konsistens.", "Värm 1/10 av jordgubbspurén i en kastrull. Ta upp gelatinbladen och tillsätt i kastrullen. Låt det smälta på svag värme. Rör ner gelatinblandningen i resten av purén.", "Blanda försiktigt ner äggsmeten i purén och sedan grädden till en slät smet. Häll smeten över bottnen. Ställ minst 4 timmar i kylskåp eller i frysen. Tina 4 timmar i rumstemperatur vid serveringen.", "Toppa tårtan med rensade jordgubbar."],
-    "ingredients": [ ]
+    "ingredients": [
+        {     
+            "name": "Rumstempererat smör",
+            "amount": 100,
+            "unit": "g"
+        },
+        {
+            "name": "Strösocker",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {
+            "name": "Ägg",
+            "amount": 2,
+            "unit": "st"
+        },
+        {
+            "name": "Sirap",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {
+            "name": "Vetemjöl",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {
+            "name": "Vaniljsocker",
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {
+            "name": "Kakao",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Dubbeldaim",
+            "amount": 112,
+            "unit": "g"
+        },
+        {
+            "name": "smör (till formen)"
+            
+        },
+        {
+            "name": "ströbröd (till formen)"
+        },
+        {
+            "name": "Gelatinblad",
+            "amount": 5,
+            "unit": "st"
+        },
+        {
+            "name": "Färska jordgubbar",
+            "amount": 0.5,
+            "unit": "l"
+        },
+        {
+            "name": "Äggulor",
+            "amount": 3,
+            "unit": "st"
+        },
+        {
+            "name": "Florsocker",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {
+            "name": "Kakao",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Vispgrädde",
+            "amount": 6,
+            "unit": "dl"
+        },
+        {
+            "name": "Färska jordgubbar",
+            "amount": 1,
+            "unit": "l"
+        }
+    ]
 }
 
 ###
@@ -30,8 +118,112 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 21,
-    "ingredients": [ "smör till formen", "1 dl kokos", "300 g färska rödbetor", "1 1/2 dl socker", "1 1/2 dl farinsocker", "1 dl rapsolja", "3 ägg", "3 dl vetemjöl", "1 tsk malen ingefära", "1 tsk malen kanel", "1/2 tsk malen muskot", "1 tsk bakpulver", "1 tsk bikarbonat", "1 krm salt", "350 g tinade, frysta hallon", "300 g färskost", "3/4 dl florsocker", "1 msk vaniljsocker", "2 dl vispgrädde", "1 dl grovhackade valnötter", "1 1/2 dl färska hallon"],
-    "instructions": [ "Rödbetskaka: Sätt ugnen på 175°C.", "Smörj en rund form med smör, ca 24 cm i diameter (för 10 portioner), och 'bröa' den med kokos.", "Skala och finriv rödbetorna.", "Vispa socker, farinsocker, rapsolja och ägg pösigt. Tillsätt de rivna rödbetorna.", "Blanda alla torra ingredienser i en bunke. Rör ner dem i rödbetssmeten.", "Häll smeten i formen. Grädda i nedre delen av ugnen ca 50 minuter. Kontrollera med provsticka, kakan ska inte vara kladdig. Låt svalna.", "Fyllning: Mosa hallonen med en gaffel. Vispa ihop med färskost, florsocker och vaniljsocker i en bunke.", "Skär kakan i två bottnar. Lägg den undre på ett fat och bred över hälften av hallonmoset. Lägg över den andra bottnen och bred på resten av fyllningen.", "Topping: Vispa grädden. Bred den runt tårtan. Garnera med valnötter och hallon."]
+    "instructions": [ "Rödbetskaka: Sätt ugnen på 175°C.", "Smörj en rund form med smör, ca 24 cm i diameter (för 10 portioner), och 'bröa' den med kokos.", "Skala och finriv rödbetorna.", "Vispa socker, farinsocker, rapsolja och ägg pösigt. Tillsätt de rivna rödbetorna.", "Blanda alla torra ingredienser i en bunke. Rör ner dem i rödbetssmeten.", "Häll smeten i formen. Grädda i nedre delen av ugnen ca 50 minuter. Kontrollera med provsticka, kakan ska inte vara kladdig. Låt svalna.", "Fyllning: Mosa hallonen med en gaffel. Vispa ihop med färskost, florsocker och vaniljsocker i en bunke.", "Skär kakan i två bottnar. Lägg den undre på ett fat och bred över hälften av hallonmoset. Lägg över den andra bottnen och bred på resten av fyllningen.", "Topping: Vispa grädden. Bred den runt tårtan. Garnera med valnötter och hallon."],
+    "ingredients": [ 
+        { 
+            "name": "smör till formen"
+        },
+        {
+            "name": "Kokos",
+            "amount": 1,
+            "unit": "dl"
+        },   
+        {
+            "name": "Färska rödbetor",
+            "amount": 300,
+            "unit": "g"
+        },   
+        {
+            "name": "Socker",
+            "amount": 1.05,
+            "unit": "dl"
+        }, 
+        {
+            "name": "Farinsocker",
+            "amount": 1.05,
+            "unit": "dl" 
+        },
+        {
+            "name": "Rapsolja",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Ägg",
+            "amount": 3,
+            "unit": "st"
+        }, 
+        {
+            "name": "Vetemjöl",
+            "amount": 3,
+            "unit": "dl"
+        },
+        {
+            "name": "Malen ingefära", 
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {
+            "name": "Malen kanel", 
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {
+            "name": "Malen muskot",
+            "amount": 0.5,
+            "unit": "tsk"
+        }, 
+        {
+            "name": "Bakpulver",
+            "amount": 1,
+            "unit": "tsk"
+        }, 
+        {
+            "name": "Bikarbonat",
+            "amount": 1,
+            "unit": "tsk"
+        }, 
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "krm"
+        },
+        {
+            "name": "Tinade, frysta hallon",
+            "amount": 350,
+            "unit": "g"
+        }, 
+        {
+            "name": "Färskost",
+            "amount": 300,
+            "unit": "g"
+        },
+        {
+            "name": "Florsocker",
+            "amount": 0.75,
+            "unit": "dl"
+        },
+        {
+            "name": "Vaniljsocker",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {
+            "name": "Vispgrädde",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {
+            "name":"Grovhackade valnötter",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name":"1 1/2 dl färska hallon",
+            "amount": 1.5,
+            "unit": "dl"
+        }
+    ]
 }
 
 ###
@@ -47,7 +239,53 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 9,
-    "ingredients": [ "300 g mandelmassa", "1 ägg", "2 äggvitor", "4 dl vispgrädde", "1/2 msk finrivet citronskal", "2 - 3 msk färskpressad citronjuice", "1 dl florsocker", "2 äggulor", "4 passionsfrukter"],
+    "ingredients": [ 
+        {
+            "name": "Mandelmassa",
+            "amount": 300,
+            "unit":"g"
+        },
+        {
+            "name": "Ägg",
+            "amount": 1,
+            "unit":"st"
+        },
+        {
+            "name": "Äggvitor",
+            "amount": 2,
+            "unit": "st"
+        }, 
+        {
+            "name": "Vispgrädde",
+            "amount": 4,
+            "unit": "dl"
+        },
+        {
+            "name": "Finrivet citronskal",
+            "amount": 0.5,
+            "unit": "msk"
+        },
+        {
+            "name": "Färskpressad citronjuice",
+            "amount": 3,
+            "unit": "msk"
+        },
+        {
+            "name": "Florsocker",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Äggulor", 
+            "amount": 2,
+            "unit": "st"
+        },
+        {
+            "name": "Passionsfrukter",
+            "amount": 4,
+            "unit": "st"
+        }
+    ],
     "instructions": [ "Sätt ugnen på 175°C.","Riv mandelmassan och rör ner ägg och äggvita. Häll smeten i en smord form med löstagbar kant, 18-20 cm i diameter. Grädda i mitten av ugnen ca 20 minuter. Låt svalna.", "Vispa grädden hårt. Vispa ner citronskal och juice, florsocker och äggulor. Bred ut krämen över den kalla botten i formen. Täck med plastfolie och ställ i frysen minst 8 timmar.", "Ta fram tårtan ca 20 minuter före servering. Dela passionsfrukten och gröp ut fruktköttet med en sked. Skeda passionsfrukten över tårtan."]
 }
 
@@ -64,7 +302,55 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 10,
-    "ingredients": [ "1 dl kylskåpskallt kikärtsspad från 1 förp kokta kikärtor (à 380 g)", "2 dl strösocker", "1/2 - 1 tsk pressad citronsaft", "1 passionsfrukt", "3 dl växtbaserat alternativ till grädde (vispbar)", "2 msk florsocker", "1/2 dl hackade pistagenötter", "1 färsk mango", "1 passionsfrukt", "ev. färsk mynta eller citronmeliss"],
+    "ingredients": [ 
+        {
+            "name": "Kylskåpskallt kikärtsspad från 1 förp kokta kikärtor (à 380 g)",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Strösocker",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {
+            "name": "Pressad citronsaft",
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {
+            "name": "Passionsfrukt",
+            "amount": 1,
+            "unit": "st"
+        },
+        {
+            "name": "Växtbaserat alternativ till grädde (vispbar)", 
+            "amount": 3,
+            "unit": "dl"
+        },
+        {
+            "name":"Florsocker",
+            "amount": 2,
+            "unit": "msk"
+        },
+        {
+            "name": "Hackade pistagenötter",
+            "amount": 0.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Färsk mango",
+            "amount": 1,
+            "unit": "st"
+        }, 
+        {
+            "name": "1 passionsfrukt",
+            "amount": 1,
+            "unit": "st"
+        }, 
+        {
+            "name": "ev. färsk mynta eller citronmeliss"
+        } ],
     "instructions": [ "Sätt ugnen på 100°C. Lägg bakplåtspapper på en plåt, 30x40 cm (för 12 bitar).", "Häll av kikärtsspadet (spara spadet, 1 dl spad för 12 bitar) från ärtorna i en finmaskig sil. Vispa kikärtsvätskan tills den är vit och fluffig. Den är tillräckligt vispad när du kan vända den upp och ned.", "Tillsätt socker, ca 1/2 dl i taget, under fortsatt vispning. När smeten är fast och glansig är marängsmeten klar. Vispa ner citronsaften mot slutet.", "Klicka ut smeten och forma till en rund tårtbotten, ca 25 cm i diameter (för 12 bitar). Gör kanterna något högre.", "Grädda i ca 2 1/2 timme tills marängen släpper från pappret. Låt marängen ligga kvar i ugnen och svalna helt ett par timmar (med luckan stängd).", "Topping: Dela och gröp ur passionsfrukten. Vispa den växtbaserade grädden tillsammans passionsfrukt och florsocker.", "Garnering: Hacka pistagenötterna. Skala och skär mangon i skivor. Dela och gröp ur passionsfrukten.", "Klicka grädden på marängen och garnera med mango och passionsfrukt. Strö över pistagenötter och eventuellt mynta eller citronmeliss."]
 }
 
@@ -81,7 +367,9 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 22,
-    "ingredients": [ "Tårtbotten: 4 ägg", "2 dl socker", "1 dl vetemjöl (à 60 g)", "1 dl potatismjöl (à 80 g)", "1 tsk bakpulver", "finrivet skal av 1/2 citron", "finrivet skal av 1/2 apelsin", "smör och mjöl till formen", "Vaniljkräm: 1 vaniljstång", "1 1/2 dl mjölk", "1 1/2 dl vispgrädde", "3 msk socker", "2 äggulor", "1 msk majsstärkelse", "Rabarberkompott: 250 g rabarber", "250 g frysta, tinade jordgubbar", "1 dl socker", "1/2 tsk äkta vaniljpulver", "Garnering: röd och blå hushållsfärg", "200 g vit marsipan", "4 dl vispgrädde", "1 färdigkavlat marsipanlock (gärna vitt)"],
+    "ingredients": [ 
+        {
+            "name": "Tårtbotten: 4 ägg", "2 dl socker", "1 dl vetemjöl (à 60 g)", "1 dl potatismjöl (à 80 g)", "1 tsk bakpulver", "finrivet skal av 1/2 citron", "finrivet skal av 1/2 apelsin", "smör och mjöl till formen", "Vaniljkräm: 1 vaniljstång", "1 1/2 dl mjölk", "1 1/2 dl vispgrädde", "3 msk socker", "2 äggulor", "1 msk majsstärkelse", "Rabarberkompott: 250 g rabarber", "250 g frysta, tinade jordgubbar", "1 dl socker", "1/2 tsk äkta vaniljpulver", "Garnering: röd och blå hushållsfärg", "200 g vit marsipan", "4 dl vispgrädde", "1 färdigkavlat marsipanlock (gärna vitt)"],
     "instructions": [ "Tårtbotten: Sätt ugnen på 175°C.", "Smörj och mjöla en form med löstagbar kant, ca 24 cm i diameter.", "Vispa ägg och socker pösigt i en bunke med elvisp ca 3 minuter.", "Blanda vetemjöl, potatismjöl och bakpulver i en annan bunke.", "Sikta ner mjölblandningen i äggblandningen. Blanda försiktigt med en slickepott till en jämn smet. Rör ner citron- och apelsinskal.", "Häll smeten i formen. Grädda i nedre delen av ugnen ca 30 minuter. Kontrollera med provsticka att kakan är helt torr. Låt svalna helt.", "Vaniljkräm: Dela vaniljstången på längden, skrapa ut fröna. Lägg dem i en tjockbottnad kastrull med övriga ingredienser.", "Sjud under vispning på svag värme, tills det har tjocknat. Låt svalna helt.", "Rabarberkompott: Ansa och skär rabarbern i ca 2 cm stora bitar. Lägg i en kastrull med jordgubbar, socker och vaniljpulver.", "Låt småkoka utan lock på medelvärme 10–15 minuter till en fast kompott. Mosa sönder jordgubbarna med en slev och rör då och då. Låt svalna helt.", "Garnering: Blanda 2 delar röd hushållsfärg med 1 del blå. Färga den vita marsipanen med detta tills den är lila. Lägg i plastfolie.", "Vispa grädden fast. Blanda grädden med 1⁄2 dl av vaniljkrämen (för 10 portioner). Halvera jordgubbarna.", "Bygg tårtan så här: Anvisningen gäller för 10 portioner. Skär tårtbottnen i 3 lika stora delar. Lägg den översta delen med ovansidan nedåt på ett fat. Bred ut vaniljkrämen.", "Lägg på mellanbottnen. Fördela kompotten. Bred ut vaniljgrädden ovanpå och forma den till en kupol (lättast med en palett eller baksidan av en stekspade), men spara ca 1 dl.", "Lägg på den sista bottnen med snittytan uppåt. Tryck försiktigt så den formas efter kupolen. Släta ut resterande vaniljgrädde runt kanterna.", "Lägg på marsipanlocket. Försök undvika att veck bildas genom att sträcka marsipanen nedåt och forma med händerna. Skär bort eventuell överflödig marsipan.", "Dela den lila marsipanen i 2 bitar. Rulla ut till ca 25 cm långa rullar. Kavla ut varje rulle på lätt florsockrat underlag till en 2 mm tjock platta, ca 40 x 4 cm. Skär så att det blir ca 2 1⁄2 cm breda 'band' med raka kanter. Snurra försiktigt banden från mitten och lägg runt tårtan. Nyp ihop skarvarna.", "Skär ett centrerat kryss genom marsipanlocket med en vass kniv. Gör ett snitt i mitten av varje flik ytterligare en gång så det bildas 8 flikar. Vik försiktigt ut flikarna. Fyll 'hålet' med jordgubbar. Sikta över lite florsocker."]
 }
 
@@ -309,7 +597,7 @@ GET https://paprika-bxu3y.ondigitalocean.app//categories/Bakelser/recipes?query=
 
 ###
 
-GET https://paprika-bxu3y.ondigitalocean.app/recipes/62836e0a5fcfd8bcf9296fa1 HTTP/1.1
+GET https://paprika-bxu3y.ondigitalocean.app/recipes/62836e4e5fcfd8bcf9296fc3 HTTP/1.1
 
 ### visar alla kategorier
 
