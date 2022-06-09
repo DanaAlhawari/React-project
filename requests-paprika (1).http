@@ -64,11 +64,11 @@ Content-Type: application/json
             "unit": "g"
         },
         {
-            "name": "smör (till formen)"
+            "name": "Smör (till formen)"
             
         },
         {
-            "name": "ströbröd (till formen)"
+            "name": "Ströbröd (till formen)"
         },
         {
             "name": "Fyllning:"
@@ -126,7 +126,7 @@ Content-Type: application/json
     "instructions": [ "Rödbetskaka: Sätt ugnen på 175°C.", "Smörj en rund form med smör, ca 24 cm i diameter (för 10 portioner), och 'bröa' den med kokos.", "Skala och finriv rödbetorna.", "Vispa socker, farinsocker, rapsolja och ägg pösigt. Tillsätt de rivna rödbetorna.", "Blanda alla torra ingredienser i en bunke. Rör ner dem i rödbetssmeten.", "Häll smeten i formen. Grädda i nedre delen av ugnen ca 50 minuter. Kontrollera med provsticka, kakan ska inte vara kladdig. Låt svalna.", "Fyllning: Mosa hallonen med en gaffel. Vispa ihop med färskost, florsocker och vaniljsocker i en bunke.", "Skär kakan i två bottnar. Lägg den undre på ett fat och bred över hälften av hallonmoset. Lägg över den andra bottnen och bred på resten av fyllningen.", "Topping: Vispa grädden. Bred den runt tårtan. Garnera med valnötter och hallon."],
     "ingredients": [ 
         { 
-            "name": "smör till formen"
+            "name": "Smör till formen"
         },
         {
             "name": "Kokos",
@@ -664,7 +664,42 @@ Content-Type: application/json
     "timeInMins": 30,
     "categories": [ "Kakor" ],
     "ingredientsAntal": 7,
-    "ingredients": [ "75 g smör", "2 msk vispgrädde", "2 msk ljus sirap", "1 dl havregryn", "1 dl vetemjöl", "1/2 tsk bakpulver", "1 dl strösocker"],
+    "ingredients": [ 
+        {
+            "name": "Smör",
+            "amount": 75,
+            "unit": "g"
+        },
+        {
+            "name": "Vispgrädde",
+            "amount": 2,
+            "unit": "msk"
+        },
+        {
+            "name": "Ljus sirap",
+            "amount": 2,
+            "unit": "msk"
+        },
+        {
+            "name": "Havregryn",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Vetemjöl", 
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Bakpulver",
+            "amount": 0.5,
+            "unit": "tsk"
+        }, 
+        {
+            "name": "Strösocker",
+            "amount": 1,
+            "unit": "dl"
+        }],
     "instructions": [ "Sätt ugnen på 200°C.", "Smält smöret i en kastrull.", "Rör i grädden och sirapen.", "Blanda havregryn, vetemjöl, bakpulver och socker och rör ned i smörblandningen. Rör ihop till en smidig deg.", "Klicka ut smeten på en plåt med bakplåtspapper.", "Grädda mitt i ugnen ca 5 minuter.", "Låt svalna."]
 }
 
@@ -681,7 +716,52 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Kakor" ],
     "ingredientsAntal": 9,
-    "ingredients": [ "100 g rumsvarmt smör","1 dl strösocker", "2 msk ljus sirap", "2 dl vetemjöl (2 dl motsvarar ca 120 g)", "2 msk kakao", "1/2 tsk bakpulver", "1 tsk vaniljsocker", "1 krm salt", "ca 100 g grovhackad mjölkchoklad"],
+    "ingredients": [ 
+        {
+            "name": "Rumsvarmt smör",
+            "amount": 100,
+            "unit": "g"
+        },
+        {
+            "name": "Strösocker", 
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Ljus sirap", 
+            "amount": 2,
+            "unit": "msk"
+        },
+        {
+            "name": "Vetemjöl",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {
+            "name": "Kakao",
+            "amount": 2,
+            "unit": "msk"
+        },
+        {
+            "name": "Bakpulver",
+            "amount": 0.5,
+            "unit": "tsk"
+        }, 
+        {
+            "name": "Vaniljsocker",
+            "amount": 1,
+            "unit": "tsk"
+        }, 
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "krm"
+        }, 
+        {
+            "name": "Grovhackad mjölkchoklad",
+            "amount": 100,
+            "unit": "g"
+        }],
     "instructions": [ "Sätt ugnen på 200°C.", "Rör smöret mjukt med socker och sirap.", "Blanda mjöl, kakao, bakpulver, vaniljsocker och salt. Rör ner i smörblandningen. Arbeta ihop till en ganska lös deg.", "Dela degen i 3 bitar på ett mjölat bakbord (för 40 st).", "Forma bitarna till tunna rullar. Lägg med ordentligt avstånd på en bakpappersklädd plåt. Platta till rullarna lätt och strö över chokladen.", "Grädda i mitten av ugnen 7–8 minuter. Kakorna kan fortfarande vara lite mjuka när man tar ut dem ur ugnen, de stelnar till när de svalnat.", "Låt längderna svalna några minuter. Skär dem lite på snedden till 2–3 cm breda bitar."]
 }
 
@@ -697,7 +777,47 @@ Content-Type: application/json
     "timeInMins": 45,
     "categories": [ "Kakor" ],
     "ingredientsAntal": 8,
-    "ingredients": [ "1/2 g saffran", "1 1/2 dl strösocker", "50 g smör", "1 tsk vaniljsocker", "1/2 dl mat- eller rapsolja", "1/2 tsk hjorthornssalt", "2 dl vetemjöl", "1 msk finrivet citronskal"],
+    "ingredients": [ 
+        {
+            "name": "Saffran",
+            "amount": 0.5,
+            "unit": "g"
+        },
+        {
+            "name": "Strösocker",
+            "amount": 1.5,
+            "unit": "dl"
+        }, 
+        {
+            "name": "Smör", 
+            "amount": 50,
+            "unit": "g"
+        },
+        {
+            "name": "Vaniljsocker",
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {
+            "name": "Mat- eller rapsolja",
+            "amount": 0.5,
+            "unit": "dl"
+        }, 
+        {
+            "name": "Hjorthornssalt",
+            "amount": 0.5,
+            "unit": "tsk"
+        }, 
+        {
+            "name": "Vetemjöl",
+            "amount": 2,
+            "unit": "dl"
+        }, 
+        {
+            "name": "Finrivet citronskal",
+            "amount": 1,
+            "unit": "msk"
+        }],
     "instructions": [ "Sätt ugnen på 150°C.", "Stöt saffranet med lite av sockret i en mortel.", "Rör smör, det stötta saffranet, resten av sockret och vaniljsocker smidigt. Tillsätt oljan lite i taget under vispning. Blanda hjorthornssaltet med lite av mjölet och rör ner i degen. Arbeta in resten av mjölet och citronskalet.", "Forma till små kulor av degen. Lägg dem på plåtar med bakplåtspapper.", "Grädda mitt i ugnen ca 15 - 20 minuter. Låt kakorna kallna på plåten."]
 }
 
@@ -714,7 +834,38 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Kakor" ],
     "ingredientsAntal": 5,
-    "ingredients": [ "200 g osaltat smör", "1 dl strösocker", "4 1/2 dl vetemjöl", "Ljus deg: 2 tsk vaniljsocker", "Mörk deg: 2 msk kakao"],
+    "ingredients": [ 
+        {
+            "name": "Osaltat smör",
+            "amount": 200,
+            "unit": "g"
+        }, 
+        {
+            "name": "Strösocker",
+            "amount": 1,
+            "unit": "dl"
+        }, 
+        {
+            "name": "Vetemjöl",
+            "amount": 4.5,
+            "unit": "dl"
+        }, 
+        {
+            "name": "Ljus deg:"
+        },
+        {
+            "name": "Vaniljsocker",
+            "amount": 2,
+            "unit": "tsk"
+        }, 
+        {
+            "name": "Mörk deg:"
+        },
+        {
+            "name": "Kakao",
+            "amount": 2,
+            "unit": "msk"
+        }],
     "instructions": [ "Ta fram smöret så det hinner bli rumsvarmt.", "Vispa ihop smör och socker till en jämn smet.", "Tillsätt vetemjöl, lite i taget, och fortsätt vispa tills det blir stora smulor.", "Dela degen i två. Tillsätt vaniljsocker till den ena och kakao till den andra delen. Tryck ihop varje del för sig, till två bollar.", "Ta upp degarna på ett bakbord och dela dem i två delar så du får två ljusa och två mörka delar.", "Rulla ut till längder och tryck till dem mot bakbordet så längderna får platta kanter. Lägg dem tätt ihop, med två ovanpå de andra så de bildar ett litet schackmönster.", "Låt vila i kylen i 1-2 timmar.", "Sätt ugnen på 200°C.", "Ta fram längden och skär ca 3-4 mm tjocka skivor.", "Lägg kakorna på en plåt med bakplåtspapper och grädda mitt i ugnen i ca 8-10 minuter."]
 }
 
@@ -731,7 +882,42 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Kakor" ],
     "ingredientsAntal": 7,
-    "ingredients": [ "100 g normalsaltat smör", "1 dl strösocker", "1 msk vaniljsocker", "1 msk ljus sirap", "2 dl vetemjöl", "1 tsk bakpulver", "1 tsk malen ingefära"],
+    "ingredients": [ 
+        {
+            "name": "Normalsaltat smör",
+            "amount": 100,
+            "unit": "g"
+        }, 
+        {
+            "name": "Strösocker",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Vaniljsocker",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {
+            "name": "Ljus sirap",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {
+            "name": "Vetemjöl",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {
+            "name": "Bakpulver",
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {
+            "name": "Malen ingefära",
+            "amount": 1,
+            "unit": "tsk"
+        }],
     "instructions": [ "Sätt på ugnen på 175°C.", "Hyvla smöret tunt och rör ihop med socker.", "Tillsätt övriga ingredienser och rör ihop till en smidig deg.", "Dela degen i hälften och rulla ut till två längder (för 20 st) som läggs på en plåt med bakplåtspapper. Platta till rullarna något.", "Grädda i ugnen i 7-8 minuter.", "Ta ut plåten och skär kakorna i lagom stora, sneda bitar medan de fortfarande är varma."]
 }
 
@@ -748,7 +934,40 @@ Content-Type: application/json
     "timeInMins": 30,
     "categories": [ "Kakor" ],
     "ingredientsAntal": 6,
-    "ingredients": [ "4 1/2 dl vetemjöl", "1 dl socker", "1 tsk bakpulver", "2 tsk vaniljsocker", "200 g smör", "Fyllning: 1 dl fast hallonsylt"],
+    "ingredients": [ 
+        {
+            "name": "Vetemjöl",
+            "amount": 4.5,
+            "unit": "dl"
+        }, 
+        {
+            "name": "Socker",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Bakpulver",
+            "amount": 1,
+            "unit": "tsk"
+        }, 
+        {
+            "name": "Vaniljsocker",
+            "amount": 2,
+            "unit": "tsk"
+        },
+        {
+            "name": "Smör",
+            "amount": 200,
+            "unit": "g"
+        },
+        {
+            "name": "Fyllning:"
+        },
+        {
+            "name": "Fast hallonsylt",
+            "amount": 1,
+            "unit": "dl"
+        }],
     "instructions": [ "Sätt ugnen på 200°C.", "Blanda samman mjöl, socker, bakpulver och vaniljsocker i en skål. Skär matfettet i mindre bitar och tillsätt det. Arbeta snabbt samman till en deg, gärna i matberedare. Om du låter degen vila en liten stund i kylen blir den lättare att hantera.", "Forma degen till valnötsstora bollar. Lägg i muffinsformar på plåtar.", "Fyllning: Gör en fördjupning i varje kaka och klicka i lite sylt.", "Grädda mitt i ugnen 10-15 minuter. Låt svalna på galler."]
 }
 
@@ -895,6 +1114,10 @@ Content-Type: application/json
 
     ]
 }
+
+###
+DELETE https://paprika-bxu3y.ondigitalocean.app/recipes/62a1a842ac9c9ef629b6fbe5 HTTP/1.1
+
 
 ###
 
