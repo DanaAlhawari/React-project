@@ -402,7 +402,41 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Bakelser" ],
     "ingredientsAntal": 9,
-    "ingredients": [ "50 g jäst", "175 g smör eller margarin", "2 påsar saffran à 1/2 g", "2 dl socker", "5 dl mjölk", "1/2 tsk salt", "ca 1 1/2 l vetemjöl (1 1/2 l motsvarar 900 g)", "Till pensling och garnering: ägg, russin"],
+    "ingredients": [ {     
+            "name": "Jäst",
+            "amount": 50,
+            "unit": "g"
+        },
+        {     
+            "name": "Smör eller Margarin",
+            "amount": 175,
+            "unit": "g"
+        },
+        {     
+            "name": "Saffran ",
+            "amount": 2,
+            "unit": "påsar"
+        },
+        {     
+            "name": "Socker",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {     
+            "name": "Mjölk",
+            "amount": 5,
+            "unit": "dl"
+        },
+        {     
+            "name": "Salt",
+            "amount": 0.5,
+            "unit": "tsk"
+        },
+        {     
+            "name": "Vetemjöl",
+            "amount": 1.5,
+            "unit": "liter"
+        }],
     "instructions": [ "Smula ner jästen i degbunken.", "Smält matfettet.", "Stöt saffranet med lite av sockret i en mortel. Rör ner saffranet i det smälta matfettet. Tillsätt mjölken och ljumma degspadet till ca 37°C.", "Rör ut jästen i lite av degspadet. Tillsätt resten av degspadet, socker och salt. Arbeta i nästan allt vetemjöl och arbeta degen ca 5 minuter i maskin eller 10 minuter för hand. Strö lite mjöl över degen. Låt den jäsa under bakduk 30- 45 minuter.", "Ta upp degen på mjölad arbetsbänk. Knåda ev. i resten av mjölet.", "Baka ut lussekatter/julkusar, flätor eller längder. Lägg bröden på plåtar med bakplåtspapper.", "Låt jäsa under bakduk 30-45 minuter.", "Sätt ugnen på 200°C.", "Pensling och garnering: Pensla med uppvispat ägg och tryck i russin.", "Grädda bullarna mitt i ugnen 8-10 minuter och längder och flätor i nedre delen av ugnen 15-20 minuter.", "Låt bullarna svalna på galler under bakduk."]
 }
 
@@ -418,7 +452,47 @@ Content-Type: application/json
     "timeInMins": 45,
     "categories": [ "Bakelser" ],
     "ingredientsAntal": 12,
-    "ingredients": [ "smör till formen", "ströbröd till formen", "100 g smör", "2 st ägg", "2 1/2 dl strösocker", "3 msk kakao", "2 tsk vaniljsocker", "1 1/2 dl vetemjöl", "1 krm salt", "Till servering:", "florsocker till garnering", "2 dl vispgrädde", "färska bär"],
+    "ingredients": [ 
+        {     
+            "name": "Smör",
+            "amount": 100,
+            "unit": "g"
+        },
+        {     
+            "name": "Ägg",
+            "amount": 2,
+            "unit": "st"
+        },
+        {     
+            "name": "Socker",
+            "amount": 2.5,
+            "unit": "dl"
+        },
+        {     
+            "name": "Kakao",
+            "amount": 3,
+            "unit": "msk"
+        },
+        {     
+            "name": "Vaniljsocker",
+            "amount": 2,
+            "unit": "tsk"
+        },
+        {     
+            "name": "Vetemjöl",
+            "amount": 1.5,
+            "unit": "dl"
+        },
+        {     
+            "name": "Salt",
+            "amount": 1,
+            "unit": "krm"
+        },
+        {     
+            "name": "Vispgrädde",
+            "amount": 2,
+            "unit": "dl"
+        }],
     "instructions": [ "Sätt ugnen på 200°C.", "Smörj och bröa en form med löstagbar kant, ca 24 cm i diameter (för 8 bitar) eller spänn fast ett bakplåtspapper på botten.", "Smält smöret i kastrull, låt svalna något.", "Vispa ihop ägg och socker (använd inte en elvisp).", "Blanda kakao, vaniljsocker, vetemjöl och salt i en bunke och rör ner i äggblandningnen.", "Tillsätt det smälta smöret och blanda försiktigt ihop till en jämn smet och häll sedan över smeten i formen.", "Grädda mitt i ugnen i ca 10-15 minuter (öka eller minska tiden vid behov beroende på hur kladdig du vill ha den).", "Ta ut kladdkakan och låt svalna.", "Sikta florsocker över om så önskas. Servera med vispad grädde och färska bär."]
 }
 
@@ -434,7 +508,42 @@ Content-Type: application/json
     "timeInMins": 30,
     "categories": [ "Bakelser" ],
     "ingredientsAntal": 7,
-    "ingredients": [ "3 plattor fryst smördeg", "2 1/2 dl vaniljkräm", "1 dl vispad grädde", "1 1/2 dl äppelmos", "2 - 2 1/2 tsk rödvinbärsgelè", "1 dl florsocker", "1 msk vatten"],
+    "ingredients": [
+        {     
+            "name": "Fryst Smördeg",
+            "amount": 3,
+            "unit": "plattor"
+        },
+        {     
+            "name": "Vaniljkräm",
+            "amount": 2.5,
+            "unit": "dl"
+        },
+        {     
+            "name": "Vispad grädde",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {     
+            "name": "Äppelmos",
+            "amount": 1.5,
+            "unit": "dl"
+        },
+        {     
+            "name": "Rödvinbärsgelè",
+            "amount": 2.5,
+            "unit": "tsk"
+        },
+        {     
+            "name": "Florsocker",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {     
+            "name": "Vatten",
+            "amount": 1,
+            "unit": "msk"
+        }],
     "instructions": [ "Sätt ugnen på 225 °C.", "Tina fryst smördeg lätt och kavla ut dem till 8 X 40 cm (för 10 bitar), lägg plattorna på vattensköljd plåt. Grädda längderna ca 10 minuter och låt dem kallna.", "Gör vaniljkräm. Låt den kallna och blanda den med vispad grädde. Bred äppelmos på en av bottnarna. Lägg på nästa botten. Bre på vaniljgrädde. Täck med översta bottnen. Lägg undersidan uppåt.", "Smält röd vinbärsgelé och bre på ett tunt lager. Rör ihop florsocker och vatten och bre på detta. Skär längderna i portionsbitar."]
 }
 
@@ -450,7 +559,52 @@ Content-Type: application/json
     "timeInMins": 45,
     "categories": [ "Bakelser" ],
     "ingredientsAntal": 9,
-    "ingredients": [ "150 g smör eller margarin (rumstempererat)", "2 dl socker", "2 ägg", "1 tsk vaniljsocker", "1/2 dl mjölk", "3 dl vetemjöl", "1 tsk bakpulver", "100 g blåbär (100 g motsvarar ca 2 dl)", "25 g mandelspån"],
+    "ingredients": [ 
+        {     
+            "name": "rumstempererat Smör eller Margarin",
+            "amount": 150,
+            "unit": "g"
+        },
+        {     
+            "name": "Socker",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {     
+            "name": "Ägg",
+            "amount": 2,
+            "unit": "st"
+        },
+        {     
+            "name": "Vaniljsocker",
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {     
+            "name": "Mjölk",
+            "amount": 0.5,
+            "unit": "dl"
+        },
+        {     
+            "name": "Vetemjöl",
+            "amount": 3,
+            "unit": "dl"
+        },
+        {     
+            "name": "Bakpulver",
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {     
+            "name": "Blåbär",
+            "amount": 100,
+            "unit": "g"
+        }, 
+        {     
+            "name": "Mandelspån",
+            "amount": 25,
+            "unit": "g"
+        }],
     "instructions": [ "Sätt ugnen på 200°C.", "Rör matfett och socker vitt och pösigt, gärna med elvisp. Rör i äggen, ett i taget. Tillsätt vaniljsocker och mjölken. Blanda mjöl och bakpulver och rör i smeten.", "Fyll smeten i en smord muffinspanna för 6 stora muffins eller i pappersformar. Tryck i blåbären med en sked. Strö över mandelspånen. Grädda i ca 15-20 min.", "Låt muffinsarna svalna i pannan innan de lossas."]
 }
 
@@ -466,7 +620,89 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Bakelser" ],
     "ingredientsAntal": 16,
-    "ingredients": [ "1 1/2 tsk kardemummakärnor", "25 g jäst (25 g jäst motsvarar 1/2 paket à 50 g)", "100 g smör eller margarin", "2 1/2 dl mjölk", "1 ägg", "1 dl strösocker", "2 krm salt", "ca 8 dl vetemjöl", "Pensling:", "ägg", "Fyllning:", "3/4 dl strösocker", "3/4 dl vatten", "1 krm bittermandelarom", "200 g mandelmassa", "1/2 dl rostade mandlar", "Garnering:", "3 dl vispgrädde", "florsocker"],
+    "ingredients": [
+        {     
+            "name": "Kardemummakärnor",
+            "amount": 1.5,
+            "unit": "tsk"
+        },
+        {     
+            "name": "Jäst",
+            "amount": 25,
+            "unit": "g"
+        },
+        {     
+            "name": "Smör eller Margarin",
+            "amount": 100,
+            "unit": "g"
+        },
+        {     
+            "name": "Mjölk",
+            "amount": 2.5,
+            "unit": "dl"
+        },
+        {     
+            "name": "Ägg",
+            "amount": 1,
+            "unit": "st"
+        },
+        {     
+            "name": "Ströcocker",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {     
+            "name": "Salt",
+            "amount": 2,
+            "unit": "krm"
+        },
+        {     
+            "name": "Vetemjöl",
+            "amount": 8,
+            "unit": "dl"
+        },
+        {     
+            "name": "Pensling: ägg"
+        },
+        {     
+            "name": "Fyllning:"
+        },
+        {     
+            "name": "Strösocker",
+            "amount": 0.75,
+            "unit": "dl"
+        },
+        {     
+            "name": "Vatten",
+            "amount": 0.75,
+            "unit": "dl"
+        },
+        {     
+            "name": "Bittermandelarom",
+            "amount": 1,
+            "unit": "krm"
+        },
+        {     
+            "name": "Mandelmassa",
+            "amount": 200,
+            "unit": "g"
+        },
+        {     
+            "name": "Rostade mandlar",
+            "amount": 0.5,
+            "unit": "dl"
+        },
+        {     
+            "name": "Garnering:"
+        },
+        {     
+            "name": "Vispgrädde",
+            "amount": 3,
+            "unit": "dl"
+        },
+        {     
+            "name": "Florsocker"
+        }],
     "instructions": [ "Mortla kardemumman. Smula jästen i en bunke. Smält matfettet i en kastrull eller i en skål i mikrovågsugnen på full effekt (max 800 W) ca 1 min. Tillsätt mjölken och värm till fingervarmt, 37°C. Häll lite av degvätskan över jästen och rör tills den löst sig.", "Tillsätt resten av degvätskan, ägg, socker, salt, kardemumma och nästan allt vetemjöl, spara lite till utbakningen. Arbeta degen smidig för hand eller i maskin tills degen släpper bunkens kanter.", "Låt degen jäsa övertäckt ca 30 min.", "Fyllning: Koka upp socker och vatten, så att sockret löser sig. Ta kastrullen från plattan. Skär mandelmassan i små bitar och vispa mandelmassan och nästan all sockerlag till en jämn bredbar smet (späd eventuellt med lite mer sockerlag). Hacka mandlarna grovt och blanda ner i mandelmassafyllningen.", "Sätt ugnen på 250°C.", "Ta upp degen på mjölad arbetsbänk och knåda den smidig med resterande mjöl. Dela degen i 10 bitar (för 10 st). Forma varje bit till en slät bulle som läggs på en bakpappersklädd plåt. Låt bullarna jäsa övertäckta ca 30 min.", "Pensling:", "Pensla bullarna med uppvispat ägg.", "Grädda mitt i ugnen i ca 10 min. Låt bullarna kallna på galler.", "Garnering:", "Skär av ett lock på varje bulle. Bred på fyllningen. Vispa grädden till fast skum, gärna med elvisp. Klicka eller spritsa grädden på bullarna och lägg på locken. Pudra över florsocker och servera semlorna."]
 }
 
@@ -482,7 +718,68 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Bakelser" ],
     "ingredientsAntal": 13,
-    "ingredients": [ "3 dl grädde (40%)", "80 g Ahlgrens bilar Orginal (80 g bilar motsvarar ca 70 st)", "6 st kexchoklad (à 60 g)", "50 g smör", "3 äggvitor", "2 krm socker (till att vispa äggvitorna med)", "1 msk citronjuice", "3 dl Ahlgrens bilar-fluff", "3 äggulor", "1 1/2 dl socker (till att vispa äggulorna med)", "200 g färskost orginal (alt mager färskost)", "några droppar röd karamellfärg", "några droppar grön karamellfärg"],
+    "ingredients": [
+        {     
+            "name": "Grädde (40%)",
+            "amount": 3,
+            "unit": "dl"
+        },
+        {     
+            "name": "Ahlgrens bilar Orginal",
+            "amount": 80,
+            "unit": "g"
+        },
+        {     
+            "name": "Kexchoklad (à 60g)",
+            "amount": 6,
+            "unit": "st"
+        },
+        {     
+            "name": "Smör",
+            "amount": 50,
+            "unit": "g"
+        },
+        {     
+            "name": "Äggvitor",
+            "amount": 3,
+            "unit": "st"
+        },
+        {     
+            "name": "Socker att vispa med äggvitorna",
+            "amount": 2,
+            "unit": "krm"
+        },
+        {     
+            "name": "Citronjuice",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {     
+            "name": "Ahlgrensbilar-fluff",
+            "amount": 3,
+            "unit": "dl"
+        },
+        {     
+            "name": "Äggulor",
+            "amount": 3,
+            "unit": "st"
+        },
+        {     
+            "name": "Socker att vispa med äggulorna",
+            "amount": 1.5,
+            "unit": "dl"
+        },
+        {     
+            "name": "Färskost Orginal",
+            "amount": 200,
+            "unit": "g"
+        },
+        {     
+            "name": "Några droppar röd karamelfärg"
+        },
+        {     
+            "name": "Några droppar grön karamelfärg"
+        }],
     "instructions": [ "Fluff: Värm grädde och Ahlgrens bilar i en kastrull på svag värme tills bilarna smälter, får inte koka. När bilarna har smält, ställ gräddblandningen i kylen och låt det svalna ca en timme.", "Botten: Smula kexchokladen med händerna i en bunke. Smält under tiden smöret i en kastrull.", "Häll sedan över smöret på kexchokladsmulorna och tryck ut smulet i en springform ca 28 cm med avtagbar kant (för 1 tårta på 12 bitar).", "Lägg in i frysen.", "Fyllning: Knäck äggen och separera äggvitan från gulan (spara äggulan till senare).", "Vispa äggvitorna med socker och citronjuice till ett hårt skum.", "Vispa Ahlgrens bilar-fluffet till vispad grädde konsistens.", "Vispa äggulor och socker pösigt ca 5 minuter.", "Tillsätt färskosten i ägguleblandningen och fortsätt att vispa.", "Vänd därefter i Ahlgrens bilar-fluffet i ägguleblandningen med slickepott.", "Sist vänder du i äggvitan på samma sätt (om du vill, ta bort 1/2 dl (för 1 tårta) för att färga hälften rosa och hälften grön för dekorering).", "Ta ut formen från frysen och häll upp blandningen. Dekorera eventuellt cheesecaken. Låt stå över natten i frysen.", "Ta loss den från formen och låt stå i kylen ca 1 timme innan servering."]
 }
 
