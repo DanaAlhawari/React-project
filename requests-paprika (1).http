@@ -14,8 +14,10 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 17,
-    "instructions": [ "Sätt ugnen på 175°C.", "Botten: Vispa smör, socker och sirap pösigt. Rör ner äggen.", "Blanda vetemjöl, salt, vaniljsocker och kakao. Hacka daimen grovt. Tillsätt mjölblandningen och daimen i smeten. Bre ut smeten i en smord, bröad springform, ca 24 cm i diameter (för 12 bitar).", "Grädda i ca 20 minuter. Låt botten kallna. Ta bort ringen på formen och torka bort ströbrödet. Sätt tillbaka ringen på botten.", "Fyllning: Blötlägg gelatinbladen 5 minuter i kallt vatten.", "Mixa jordgubbarna i matberedare eller med stavmixer till en slät puré.", "Vispa äggulor och florsocker luftigt. Vispa grädden till lös konsistens.", "Värm 1/10 av jordgubbspurén i en kastrull. Ta upp gelatinbladen och tillsätt i kastrullen. Låt det smälta på svag värme. Rör ner gelatinblandningen i resten av purén.", "Blanda försiktigt ner äggsmeten i purén och sedan grädden till en slät smet. Häll smeten över bottnen. Ställ minst 4 timmar i kylskåp eller i frysen. Tina 4 timmar i rumstemperatur vid serveringen.", "Toppa tårtan med rensade jordgubbar."],
     "ingredients": [
+        {     
+            "name": "Botten:"
+        },
         {     
             "name": "Rumstempererat smör",
             "amount": 100,
@@ -23,7 +25,7 @@ Content-Type: application/json
         },
         {
             "name": "Strösocker",
-            "amount": 2,
+            "amount": 2.3,
             "unit": "dl"
         },
         {
@@ -38,17 +40,17 @@ Content-Type: application/json
         },
         {
             "name": "Vetemjöl",
-            "amount": 1,
+            "amount": 1.5,
             "unit": "dl"
         },
         {
             "name": "Salt",
-            "amount": 1,
+            "amount": 0.5,
             "unit": "tsk"
         },
         {
             "name": "Vaniljsocker",
-            "amount": 1,
+            "amount": 1.5,
             "unit": "tsk"
         },
         {
@@ -67,6 +69,9 @@ Content-Type: application/json
         },
         {
             "name": "ströbröd (till formen)"
+        },
+        {
+            "name": "Fyllning:"
         },
         {
             "name": "Gelatinblad",
@@ -89,21 +94,21 @@ Content-Type: application/json
             "unit": "dl"
         },
         {
-            "name": "Kakao",
-            "amount": 1,
-            "unit": "dl"
-        },
-        {
             "name": "Vispgrädde",
             "amount": 6,
             "unit": "dl"
+        },
+        {
+            "name": "Garnering:"
         },
         {
             "name": "Färska jordgubbar",
             "amount": 1,
             "unit": "l"
         }
-    ]
+    ],
+    "instructions": [ "Sätt ugnen på 175°C.", "Botten: Vispa smör, socker och sirap pösigt. Rör ner äggen.", "Blanda vetemjöl, salt, vaniljsocker och kakao. Hacka daimen grovt. Tillsätt mjölblandningen och daimen i smeten. Bre ut smeten i en smord, bröad springform, ca 24 cm i diameter (för 12 bitar).", "Grädda i ca 20 minuter. Låt botten kallna. Ta bort ringen på formen och torka bort ströbrödet. Sätt tillbaka ringen på botten.", "Fyllning: Blötlägg gelatinbladen 5 minuter i kallt vatten.", "Mixa jordgubbarna i matberedare eller med stavmixer till en slät puré.", "Vispa äggulor och florsocker luftigt. Vispa grädden till lös konsistens.", "Värm 1/10 av jordgubbspurén i en kastrull. Ta upp gelatinbladen och tillsätt i kastrullen. Låt det smälta på svag värme. Rör ner gelatinblandningen i resten av purén.", "Blanda försiktigt ner äggsmeten i purén och sedan grädden till en slät smet. Häll smeten över bottnen. Ställ minst 4 timmar i kylskåp eller i frysen. Tina 4 timmar i rumstemperatur vid serveringen.", "Toppa tårtan med rensade jordgubbar."]
+    
 }
 
 ###
@@ -219,7 +224,7 @@ Content-Type: application/json
             "unit": "dl"
         },
         {
-            "name":"1 1/2 dl färska hallon",
+            "name":"Färska hallon",
             "amount": 1.5,
             "unit": "dl"
         }
@@ -369,7 +374,116 @@ Content-Type: application/json
     "ingredientsAntal": 22,
     "ingredients": [ 
         {
-            "name": "Tårtbotten: 4 ägg", "2 dl socker", "1 dl vetemjöl (à 60 g)", "1 dl potatismjöl (à 80 g)", "1 tsk bakpulver", "finrivet skal av 1/2 citron", "finrivet skal av 1/2 apelsin", "smör och mjöl till formen", "Vaniljkräm: 1 vaniljstång", "1 1/2 dl mjölk", "1 1/2 dl vispgrädde", "3 msk socker", "2 äggulor", "1 msk majsstärkelse", "Rabarberkompott: 250 g rabarber", "250 g frysta, tinade jordgubbar", "1 dl socker", "1/2 tsk äkta vaniljpulver", "Garnering: röd och blå hushållsfärg", "200 g vit marsipan", "4 dl vispgrädde", "1 färdigkavlat marsipanlock (gärna vitt)"],
+            "name": "Tårtbotten:"
+        },
+        {
+            "name": "Ägg",
+            "amount": 4,
+            "unit": "st"
+        },
+        {
+            "name": "Socker",
+            "amount": 2,
+            "unit": "dl"
+        }, 
+        {
+            "name": "Vetemjöl",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Potatismjöl",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {    "name": "Bakpulver",
+             "amount": 1,
+             "unit": "tsk"
+        },
+        {
+            "name": "Finrivet skal av 1/2 citron"
+        },
+        {
+            "name": "Finrivet skal av 1/2 apelsin"
+        },
+        {
+            "name": "Smör och mjöl till formen"
+        },
+        {
+            "name": "Vaniljkräm:"
+        },
+        {
+            "name": "Vaniljstång",
+            "amount": 1,
+            "unit": "st"
+        },
+        {
+            "name": "Mjölk",
+            "amount": 1.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Vispgrädde",
+            "amount": 1.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Socker",
+            "amount": 3,
+            "unit": "msk"
+        },
+        {
+            "name": "Äggulor",
+            "amount": 2,
+            "unit": "st"
+        },
+        {
+            "name": "Majsstärkelse",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {
+            "name": "Rabarberkompott:"
+        },
+         {
+            "name": "Rabarber",
+            "amount": 250,
+            "unit": "g"
+        },
+        {
+            "name": "Frysta, tinade jordgubbar",
+            "amount": 250,
+            "unit": "g" 
+        },
+        {
+            "name": "Socker",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Vaniljpulver",
+            "amount": 0.5,
+            "unit": "tsk"
+        },
+        {
+            "name": "Garnering:"
+        },
+        {
+            "name": "Röd och blå hushållsfärg"
+        }, 
+        {
+            "name": "Vit marsipan",
+            "amount": 200,
+            "unit": "g"
+        },
+        {
+            "name": "Vispgrädde",
+            "amount": 4,
+            "unit": "dl"
+        },
+        {
+            "name": "1 färdigkavlat marsipanlock (gärna vitt)"
+        }],
     "instructions": [ "Tårtbotten: Sätt ugnen på 175°C.", "Smörj och mjöla en form med löstagbar kant, ca 24 cm i diameter.", "Vispa ägg och socker pösigt i en bunke med elvisp ca 3 minuter.", "Blanda vetemjöl, potatismjöl och bakpulver i en annan bunke.", "Sikta ner mjölblandningen i äggblandningen. Blanda försiktigt med en slickepott till en jämn smet. Rör ner citron- och apelsinskal.", "Häll smeten i formen. Grädda i nedre delen av ugnen ca 30 minuter. Kontrollera med provsticka att kakan är helt torr. Låt svalna helt.", "Vaniljkräm: Dela vaniljstången på längden, skrapa ut fröna. Lägg dem i en tjockbottnad kastrull med övriga ingredienser.", "Sjud under vispning på svag värme, tills det har tjocknat. Låt svalna helt.", "Rabarberkompott: Ansa och skär rabarbern i ca 2 cm stora bitar. Lägg i en kastrull med jordgubbar, socker och vaniljpulver.", "Låt småkoka utan lock på medelvärme 10–15 minuter till en fast kompott. Mosa sönder jordgubbarna med en slev och rör då och då. Låt svalna helt.", "Garnering: Blanda 2 delar röd hushållsfärg med 1 del blå. Färga den vita marsipanen med detta tills den är lila. Lägg i plastfolie.", "Vispa grädden fast. Blanda grädden med 1⁄2 dl av vaniljkrämen (för 10 portioner). Halvera jordgubbarna.", "Bygg tårtan så här: Anvisningen gäller för 10 portioner. Skär tårtbottnen i 3 lika stora delar. Lägg den översta delen med ovansidan nedåt på ett fat. Bred ut vaniljkrämen.", "Lägg på mellanbottnen. Fördela kompotten. Bred ut vaniljgrädden ovanpå och forma den till en kupol (lättast med en palett eller baksidan av en stekspade), men spara ca 1 dl.", "Lägg på den sista bottnen med snittytan uppåt. Tryck försiktigt så den formas efter kupolen. Släta ut resterande vaniljgrädde runt kanterna.", "Lägg på marsipanlocket. Försök undvika att veck bildas genom att sträcka marsipanen nedåt och forma med händerna. Skär bort eventuell överflödig marsipan.", "Dela den lila marsipanen i 2 bitar. Rulla ut till ca 25 cm långa rullar. Kavla ut varje rulle på lätt florsockrat underlag till en 2 mm tjock platta, ca 40 x 4 cm. Skär så att det blir ca 2 1⁄2 cm breda 'band' med raka kanter. Snurra försiktigt banden från mitten och lägg runt tårtan. Nyp ihop skarvarna.", "Skär ett centrerat kryss genom marsipanlocket med en vass kniv. Gör ett snitt i mitten av varje flik ytterligare en gång så det bildas 8 flikar. Vik försiktigt ut flikarna. Fyll 'hålet' med jordgubbar. Sikta över lite florsocker."]
 }
 
@@ -386,7 +500,58 @@ Content-Type: application/json
     "timeInMins": 60,
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 9,
-    "ingredients": [ "2 dl havregryn", "50 g smör", "1 1/2 dl socker", "1 msk majsstärkelse", "1 tsk bakpulver", "1 ägg", "Fyllning: 5 dl mellan- eller vispgrädde", "1 msk vaniljsocker", "Garnering: 150 g mörk blockchoklad"],
+    "ingredients": [ 
+        {
+            "name": "Havregryn",
+            "amount": 2,
+            "unit": "dl"
+        },
+        { 
+            "name": "Smör",
+            "amount": 50,
+            "unit": "g"
+        }, 
+        {
+            "name": "Socker",
+            "amount": 1.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Majsstärkelse",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {
+            "name": "Bakpulver",
+            "amount": 1,
+            "unit": "tsk"
+        },
+        {
+            "name": "Ägg",
+            "amount": 1,
+            "unit": "st"
+        },
+        { 
+            "name": "Fyllning:"
+        },
+        {
+            "name": "Mellan- eller vispgrädde",
+            "amount": 5,
+            "unit": "dl"
+        },
+        {
+            "name": "Vaniljsocker",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {
+            "name": "Garnering:"
+        },
+        {
+            "name": "Mörk blockchoklad",
+            "amount": 150,
+            "unit": "g"
+        }],
     "instructions": [ "Sätt ugnen på 200°C.", "Rosta havregrynen i en torr het stekpanna tills de får en aning färg. Se upp, för de kan lätt brännas! Låt grynen kallna", "Smält matfettet och häll det över havregrynen. Tillsätt socker, maizena och bakpulver. Vispa upp ägget och tillsätt det.", "Rita 3 cirklar med ca 21 cm diameter på bakplåtspapper (för 10 bitar). Fördela smeten i ett tunt jämnt lager på varje cirkel. Grädda 6-8 minuter mitt i ugnen.", "Låt bottnarna svalna plant. Dra försiktigt loss papperet.", "Smält blockchokladen och bre ut den till ett tunt lager på bakplåtspapper. Dra med en gaffel om du vill ha ett vågmönster. Låt chokladen stelna svalt, men skär rutmönster innan den är riktigt hård.", "Fyllning: Vispa grädden till fast skum och smaksätt med vaniljsocker.", "Spritsa eller bre ut fyllningen mellan bottnarna och ovanpå tårtan.", "Garnera med chokladbitar. Servera tårtan inom de närmaste timmarna, eftersom bottnarna blir mjuka om de får vänta länge."]
 }
 
