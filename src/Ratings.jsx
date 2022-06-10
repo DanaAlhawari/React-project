@@ -14,6 +14,13 @@ const rattDivStyle = {
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)"
 }
 
+const RatingText = () => (
+    <>
+        <h3>Vad tycker du om receptet?</h3>
+        <p>Klicka på en eller flera stjärnor för att ge ditt betyg, tack!</p>
+               
+    </>
+)
 const RatingsPost = ({ recipesId }) => {
 
     const [Rating, setRating] = useState()
@@ -48,25 +55,29 @@ const RatingsPost = ({ recipesId }) => {
     } 
   
     return (
-        <Container>
+        
             <Row style={rattDivStyle}>
 
                 <Col >
-                    <h3>Vad tycker du om receptet?</h3>
-                    <p>Klicka på en eller flera stjärnor för att ge ditt betyg, tack!</p>
-                {message ? <p>{message}</p> : 
-                    <ReactStars
+                    
+                {message ? <h3>{message}</h3> : 
+                   <>
+                   <RatingText /> 
+
+                    <ReactStars  
                         count={5}
                         onChange={setRating}
                         size={35}
                         isHalf={true}
                         color={'#EAEEC5'}
                         activeColor={"#8B6E4E"}
+                        
                     />
+                </>
                 }
                 </Col>
             </Row>
-        </Container>
+        
     )
 }
 

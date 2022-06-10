@@ -1,5 +1,5 @@
 import { Row, Col } from "react-bootstrap";
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 import styles from "./App.module.css";
 
 /* const dateStyle = {
