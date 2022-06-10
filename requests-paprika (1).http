@@ -496,7 +496,7 @@ Content-Type: application/json
     "title": "Schwarzwaldtårta",
     "description": "En riktigt mäktig och fantastiskt god tårta med smak av blockchoklad och vispgrädde. Schwarzwaldtårtan uppskattas lika mycket av stora som av små. Perfekt att servera till kalaset eller högtidsdagen! ",
     "ratings": [2, 3, 4, 1, 2, 3],
-    "imageUrl": "https://cdn-rdb.arla.com/Files/arla-se/500235447/0c754d0f-88ca-4596-a31e-d5b114615cfb.jpg?crop=(0,0,0,-148)&w=1269&h=715&ak=f525e733&hm=5c342ed7",
+    "imageUrl": "https://www.dahls.se/wp-content/uploads/2021/03/Dahls-tartor-schwarzwaldtarta_kvadrat-1024x1024.jpg",
     "timeInMins": 60,
     "categories": [ "Tårtor" ],
     "ingredientsAntal": 9,
@@ -1413,7 +1413,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE https://paprika-bxu3y.ondigitalocean.app/recipes/62a1a842ac9c9ef629b6fbe5 HTTP/1.1
+DELETE https://paprika-bxu3y.ondigitalocean.app/recipes/62a0a0e8ac9c9ef629b6fa24 HTTP/1.1
 
 
 ###

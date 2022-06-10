@@ -10,20 +10,6 @@ import ReactStars from "react-rating-stars-component";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import RatingsPost from './Ratings';
 
-const rattDivStyle = {
-    width: "50%",
-    height: "200px",
-    margin: "auto",
-    textAlign: "center",
-    color: "#8B6E4E",
-    backgroundColor: 'rgb(227, 215, 200)',
-    padding: "16px 32px",
-    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)"
-}
-const imgStyle = {
-    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)"
-}
-
 
 const Receptsida = () => {
     const { recipesId } = useParams();
@@ -50,14 +36,15 @@ const Receptsida = () => {
                                 backgroundImage: `url(${Recept.imageUrl}) `, backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover', backgroundPosition: 'center'
                             }} className={styles.cardBody}>
-                                <div style={{ backgroundColor: '#FFF8F0', opacity: '0.7', padding: 16 }}>
+                                <div style={{ backgroundColor: '#FFF8F0', opacity: '0.7', width: "80%", margin: '3% auto', padding: 16 }}>
                                     <h2>{Recept.title}</h2>
                                  <ul>
                                     {Recept.ingredients.map(ingredient =>
                                         <li > {ingredient.amount} {ingredient.unit} {ingredient.name}</li>)}
                                     </ul> 
                                  <Card.Text>
-                                        {Recept.description}
+                                 <p>{Recept.description}</p>
+                                        
                                         <ol>
                                             {Recept.instructions.map(instruction =>
                                                 <li > {instruction}</li>)}

@@ -19,6 +19,10 @@ const textStyle = {
       height: "400px",
 }
 
+const kategoriCardStyle= {
+    marginBottom:"2%"
+}
+
 const Kategorisida = ({searchText}) => {
     const {categories}  = useParams();
     const [receptCategory, setRecept] = useState();
@@ -38,7 +42,7 @@ useEffect(() => {
          <Container>   
           <Row>
               {receptCategory?.map((recept) =>
-                <Col sm={12}  md={6} lg={4} key={recept._id}>
+                <Col sm={12}  md={6} lg={4} key={recept._id}style={kategoriCardStyle}>
                    
                         <NavLink to={`/recipes/${recept._id}`} style={receptLink}>
                             <img alt={recept.title} src={recept.imageUrl} style={imgStyle} />
@@ -61,7 +65,9 @@ useEffect(() => {
                         </NavLink>
                    
                     </Col> )}
+                  
             </Row>
+            
 
         </Container>  
        

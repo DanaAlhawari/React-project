@@ -17,9 +17,12 @@ const receptLink ={
 const textStyle = {
     backgroundColor: "#E3D7C8",
     padding: "8px 16px",
-      /*height: "400px",*/
+    height: "400px"
 } 
 
+const kategoriCardStyle= {
+    marginBottom:"2%"
+}
 
 // searchText till kategorisida och receptsida, väntar på backend
 const Recept = ({searchText}) => {
@@ -48,7 +51,7 @@ const Recept = ({searchText}) => {
               {isLoading ?
                <p>Laddar...</p> : receptList.length === 0 ?
                    <p>Inga bakverk hittades!</p> : receptList.map((recept) =>
-                <Col sm={12}  md={6} lg={4} key={recept._id}>
+                <Col sm={12}  md={6} lg={4} key={recept._id}style={kategoriCardStyle}>
                         <NavLink to={`/recipes/${recept._id}`} style={receptLink}>
                             <img alt={recept.title} src={recept.imageUrl} style={imgStyle} />
                             <div style={textStyle}>

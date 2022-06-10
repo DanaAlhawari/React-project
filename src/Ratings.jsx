@@ -4,9 +4,9 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import styles from "./App.module.css";
 
 const rattDivStyle = {
-    width: "50%",
+    //width: "50%",
     height: "200px",
-    margin: "auto",
+    //margin: "auto",
     textAlign: "center",
     color: "#8B6E4E",
     backgroundColor: 'rgb(227, 215, 200)',
