@@ -5,8 +5,8 @@ import styles from "./App.module.css";
 /* const dateStyle = {
     textAlignLast: 'right'
 } */
-const CommentList = ({ recipesId, data, setData}) => {
-    
+const CommentList = ({ recipesId, data, setData }) => {
+
     useEffect(() => {
         fetch(`https://paprika-bxu3y.ondigitalocean.app/recipes/${recipesId}/comments`)
             .then((response) => response.json())
@@ -16,7 +16,7 @@ const CommentList = ({ recipesId, data, setData}) => {
     return (
 
         data.map(({ name, comment }) => (
-            <Row className={styles.form}>
+            <Row className={styles.commentList}>
                 <Col >
                     <div key={data._id} >
                         <h4>{name} </h4>

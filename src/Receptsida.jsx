@@ -37,27 +37,29 @@ const Receptsida = () => {
                                 backgroundSize: 'cover', backgroundPosition: 'center'
                             }} className={styles.cardBody}>
                                 <div style={{ backgroundColor: '#FFF8F0', opacity: '0.7', width: "80%", margin: '3% auto', padding: 16 }}>
+                                    <ReactStars
+                                        count={5}
+                                        edit={false}
+                                        size={35}
+                                        isHalf={true}
+                                        color={'#EAEEC5'}
+                                        activeColor={"#8B6E4E"}
+                                        value={Recept.avgRating} />
                                     <h2>{Recept.title}</h2>
-                                 <ul>
-                                    {Recept.ingredients.map(ingredient =>
-                                        <li > {ingredient.amount} {ingredient.unit} {ingredient.name}</li>)}
-                                    </ul> 
-                                 <Card.Text>
-                                 <p>{Recept.description}</p>
-                                        
+                                    <p>{Recept.description}</p>
+                                    <ul>
+                                        {Recept.ingredients.map(ingredient =>
+                                            <li > {ingredient.amount} {ingredient.unit} {ingredient.name}</li>)}
+                                    </ul>
+                                    <Card.Text>
+
+                                        <p>GÖR SÅ HÄR...</p>
                                         <ol>
                                             {Recept.instructions.map(instruction =>
                                                 <li > {instruction}</li>)}
                                         </ol>
                                         <strong>{Recept.categories} || {Recept.timeInMins} Minuter </strong>
-                                        <ReactStars
-                                            count={5}
-                                            edit={false}
-                                            size={35}
-                                            isHalf={true}
-                                            color={'#EAEEC5'}
-                                            activeColor={"#8B6E4E"}
-                                            value={Recept.avgRating} />
+
                                     </Card.Text>
                                 </div>
                             </div>
@@ -80,6 +82,7 @@ const Receptsida = () => {
             </Row>
             <br />
             <CommentList recipesId={recipesId} data={data} setData={setData} />
+
         </Container>
 
     );
