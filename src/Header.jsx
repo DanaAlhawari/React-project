@@ -22,7 +22,6 @@ const Header = ({ setSearchText }) => {
         []
 
     )
-    console.log(categories)
 
     // 2.1 Sökrutan
     // 2.2 Kategoriknappar

@@ -13,7 +13,7 @@ const CommentList = ({ recipesId, data, setData }) => {
 
     return (
 
-        data.map(({ name, comment }) => (
+        data.map(({ name, comment }) => ( 
             <Row className={styles.commentList}>
                 <Col >
                     <div key={data._id} >
