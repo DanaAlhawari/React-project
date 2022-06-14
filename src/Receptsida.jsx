@@ -30,7 +30,6 @@ const Receptsida = () => {
             <Row>{Recept ?
                 <Col key={Recept._id} >
                     <Card className={styles.receptFlexContainer}>
-                        {/* <Card.Img alt={Recept.title} src={Recept.imageUrl} style={imgStyle} /> */}
                         <Card.Body className={styles.receptCardText} style={{ padding: 0 }} >
                             <div style={{
                                 backgroundImage: `url(${Recept.imageUrl}) `, backgroundRepeat: 'no-repeat',

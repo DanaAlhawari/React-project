@@ -6,9 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const Btn1Style = {
     color: '#eaeac5'
 };
-// const Btn3Style = {
-//     color: '#EAEEC5'
-// };
+
 const containerStyle = {
     marginBottom: '1%'
 }

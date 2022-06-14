@@ -18,8 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Startsida searchText={searchText} />} />
         <Route path="Kategorisida/:categories/recipes" element={<Kategorisida searchText={searchText} />} />
-{/*         <Route path="/categories/recipes" element={<Header />} />
- */}        <Route path="/recipes/:recipesId" element={<Receptsida />} />
+        <Route path="/recipes/:recipesId" element={<Receptsida />} />
       </Routes>
       
       

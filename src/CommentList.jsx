@@ -2,9 +2,6 @@ import { Row, Col } from "react-bootstrap";
 import { useEffect } from "react"
 import styles from "./App.module.css";
 
-/* const dateStyle = {
-    textAlignLast: 'right'
-} */
 const CommentList = ({ recipesId, data, setData }) => {
 
     useEffect(() => {
