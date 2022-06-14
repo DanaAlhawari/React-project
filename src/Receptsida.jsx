@@ -48,15 +48,15 @@ const Receptsida = () => {
                                     <h2>{Recept.title}</h2>
                                     <p>{Recept.description}</p>
                                     <ul>
-                                        {Recept.ingredients.map(ingredient =>
-                                            <li > {ingredient.amount} {ingredient.unit} {ingredient.name}</li>)}
+                                        {Recept.ingredients.map((ingredient, index) => 
+                                            <li key={index}>  {ingredient.amount} {ingredient.unit} {ingredient.name}</li>)}
                                     </ul>
                                     <Card.Text>
 
                                         <p>GÖR SÅ HÄR...</p>
                                         <ol>
-                                            {Recept.instructions.map(instruction =>
-                                                <li > {instruction}</li>)}
+                                            {Recept.instructions.map((instruction, index) =>
+                                                <li key={index}> {instruction}</li>)}
                                         </ol>
                                         <strong>{Recept.categories} || {Recept.timeInMins} Minuter </strong>
 

@@ -41,7 +41,7 @@ const Header = ({ setSearchText }) => {
             <SearchBar setSearchText={setSearchText} />
             <br />
             <Row >
-                {categories.map(category => <Col className={styles.categoriButton}><button className={styles.btn}><NavLink to={encodeURI(`Kategorisida/${category.name}/recipes`)} className={({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>{category.name} ({category.count})</NavLink></button></Col>)}
+                {categories.map(category => <Col key={category.name} className={styles.categoriButton}><button className={styles.btn}><NavLink to={encodeURI(`Kategorisida/${category.name}/recipes`)} className={({ isActive }) => isActive ? styles.activeLink : styles.inactiveLink} style={Btn1Style}>{category.name} ({category.count})</NavLink></button></Col>)}
             </Row>
         </Container>
     </>

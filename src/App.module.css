@@ -138,3 +138,8 @@ textarea[type=text] {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         color: #8B6E4E;
 }
+
+.StarsInCenter {
+    width: 150px;
+    margin: 0 auto;
+}

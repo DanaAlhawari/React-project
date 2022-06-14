@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import { Row, Col } from "react-bootstrap";
+import styles from "./App.module.css";
 
 
 const rattDivStyle = {
@@ -62,7 +63,7 @@ const RatingsPost = ({ recipesId }) => {
                 {message ? <h3>{message}</h3> :
                     <>
                         <RatingText />
-
+                <div className={styles.StarsInCenter}>
                         <ReactStars
                             count={5}
                             onChange={setRating}
@@ -72,6 +73,7 @@ const RatingsPost = ({ recipesId }) => {
                             activeColor={"#8B6E4E"}
 
                         />
+                        </div>
                     </>
                 }
             </Col>
