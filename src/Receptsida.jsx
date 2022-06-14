@@ -1,5 +1,3 @@
-// 4 Receptsida
-
 import Form from './Form';
 import CommentList from './CommentList';
 import { useState } from "react";
@@ -10,7 +8,7 @@ import ReactStars from "react-rating-stars-component";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import RatingsPost from './Ratings';
 
-
+// 4. Receptsida
 const Receptsida = () => {
     const { recipesId } = useParams();
     const [Recept, setRecept] = useState();
@@ -22,8 +20,7 @@ const Receptsida = () => {
 
     }, [recipesId])
 
-
-    // 2.4 Tid det tar att göra receptet
+// 2.4 Tid det tar att göra receptet
 
     return (
         <Container>
@@ -85,10 +82,10 @@ const Receptsida = () => {
 
         </Container>
 
-    );
+    )
 
 }
 
 
 
-export default Receptsida;
+export default Receptsida

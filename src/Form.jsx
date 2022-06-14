@@ -6,8 +6,7 @@ const Form = ({ recipesId, data, setData }) => {
     const [message, setMessage] = useState("");
 
     const onSubmit = (e) => {
-        console.log("funktion fungerar ");
-        e.preventDefault();
+        e.preventDefault()
         if (name.length > 0 && comment.length > 0) {
             fetch(
                 `https://paprika-bxu3y.ondigitalocean.app/recipes/${recipesId}/comments`,
@@ -26,23 +25,22 @@ const Form = ({ recipesId, data, setData }) => {
                 if (res.status === 200) {
                     setName("");
                     setComment("");            
-                    setMessage("Tack för din kommentarer");
+                    setMessage("Tack för din kommentar!");
                     return res.json()
                 } else {
-                    setMessage("Det gick något fel");
+                    setMessage("Något gick fel");
                 }
             }).then((newComment) => {
                 setData([...data, newComment])
             })
         } else {
-            setMessage("fyll i alla fält");
+            setMessage("Fyll i alla fält");
 
         }
     };
 
 
     // 4.1 Kommentarsfunktion
-    
     return (
         <form onSubmit={onSubmit}>
             <input
@@ -70,4 +68,4 @@ const Form = ({ recipesId, data, setData }) => {
     );
 };
 
-export default Form;
+export default Form

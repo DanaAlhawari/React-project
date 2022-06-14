@@ -33,7 +33,7 @@
     font-size: 2vw;
 }
 
-/*kategori knapper*/
+/*2.8.1 Kategoriknappar*/
 .categoriButton {
     width: 60%;
     margin: auto;
@@ -53,7 +53,7 @@
 }
 
 
-/* 2.8 Kategoriknappar */
+/* 2.8.1 Kategoriknappar */
 .activeLink {
     font-weight: bold;
     text-decoration: none;
@@ -65,7 +65,7 @@
     text-decoration: none;
 }
 
-/*receptsida*/
+/*4 Receptsida*/
 
 .receptFlexContainer {
     margin: 3% auto;
@@ -84,7 +84,7 @@
 .receptCardText>h2 {
     text-align: center;  
 }
-
+/* 4.1.1 Kommentarsfält */
 input[type=text],
 textarea[type=text] {
     width: 80%;
@@ -115,6 +115,7 @@ textarea[type=text] {
     background-color: #8B6E4E;
     border: 2px solid #8B6E4E;
 }
+
 .form {
      width: 100%; 
     margin: auto !important;
@@ -128,6 +129,7 @@ textarea[type=text] {
  ul {
     list-style-type: none;
 }
+
 .commentList{
         width: 100%;
         margin: auto !important;
@@ -139,6 +141,7 @@ textarea[type=text] {
         color: #8B6E4E;
 }
 
+/* 2.6 Rating */
 .StarsInCenter {
     width: 150px;
     margin: 0 auto;

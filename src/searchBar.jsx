@@ -1,5 +1,6 @@
-import { Row, Col, Form } from "react-bootstrap";
+import { Row, Col, Form } from "react-bootstrap"
 
+// 2.1 Sökfunktion
 const searchstyle = {
     width: "60%",
     margin: 'auto',

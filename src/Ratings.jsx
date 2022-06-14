@@ -3,7 +3,7 @@ import ReactStars from "react-rating-stars-component";
 import { Row, Col } from "react-bootstrap";
 import styles from "./App.module.css";
 
-
+// 2.6 Rating
 const rattDivStyle = {
     width: "100%",
     height: "200px",
@@ -46,10 +46,10 @@ const RatingsPost = ({ recipesId }) => {
                     setMessage("Tack för din röst!")
 
                 } else {
-                    setMessage("Det gick något fel");
+                    setMessage("Något gick fel")
 
                 }
-            });
+            })
 
 
     }
@@ -57,9 +57,7 @@ const RatingsPost = ({ recipesId }) => {
     return (
 
         <Row style={rattDivStyle}>
-
             <Col >
-
                 {message ? <h3>{message}</h3> :
                     <>
                         <RatingText />

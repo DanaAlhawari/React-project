@@ -1,11 +1,10 @@
-// 2 Startsida
-
 import { useState } from "react";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
 
+// 2 Startsida
 const imgStyle = {
     width: "100%",
     height: "450px",
@@ -40,7 +39,7 @@ const Recept = ({ searchText }) => {
 
     }, [searchText])
 
-    // 2.7 Receptkort
+// 2.7 Receptkort
 
     return (
         <Container>
@@ -72,7 +71,4 @@ const Recept = ({ searchText }) => {
     )
 }
 
-export default Recept;
-
-
-
+export default Recept

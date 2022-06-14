@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col } from "react-bootstrap";
-//import Header from './Header'
 import ReactStars from "react-rating-stars-component";
+
 const imgStyle = {
     width: "100%",
     height: "450px",
@@ -33,8 +33,6 @@ useEffect(() => {
     
 }, [categories, searchText])
 
-   //console.log(receptCategory);
-
    // 2.7 Receptkort
    // 3 Kategorisida
 
@@ -51,7 +49,6 @@ useEffect(() => {
                                   <ReactStars
                                       count={5}
                                       edit= {false}
-                                    //onChange={ratingChanged}
                                       size={35}  
                                       isHalf= {true}
                                       color= {'#EAEEC5'}
@@ -73,4 +70,4 @@ useEffect(() => {
        
   ) 
 }
-export default Kategorisida;
+export default Kategorisida
