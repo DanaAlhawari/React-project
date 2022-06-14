@@ -37,18 +37,19 @@ const Receptsida = () => {
                                 backgroundSize: 'cover', backgroundPosition: 'center'
                             }} className={styles.cardBody}>
                                 <div style={{ backgroundColor: '#FFF8F0', opacity: '0.7', width: "80%", margin: '3% auto', padding: 16 }}>
-                                    <ReactStars
-                                        count={5}
-                                        edit={false}
-                                        size={35}
-                                        isHalf={true}
-                                        color={'#EAEEC5'}
-                                        activeColor={"#8B6E4E"}
-                                        value={Recept.avgRating} />
+                                    <div className={styles.StarsInRight}>
+                                        <ReactStars
+                                            count={5}
+                                            edit={false}
+                                            size={35}
+                                            isHalf={true}
+                                            color={'#EAEEC5'}
+                                            activeColor={"#8B6E4E"}
+                                            value={Recept.avgRating} /></div>
                                     <h2>{Recept.title}</h2>
                                     <p>{Recept.description}</p>
                                     <ul>
-                                        {Recept.ingredients.map((ingredient, index) => 
+                                        {Recept.ingredients.map((ingredient, index) =>
                                             <li key={index}>  {ingredient.amount} {ingredient.unit} {ingredient.name}</li>)}
                                     </ul>
                                     <Card.Text>
