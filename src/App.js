@@ -20,8 +20,6 @@ const App = () => {
         <Route path="Kategorisida/:categories/recipes" element={<Kategorisida searchText={searchText} />} />
         <Route path="/recipes/:recipesId" element={<Receptsida />} />
       </Routes>
-      
-      
   </div>
 
 }
